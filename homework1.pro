@@ -9,13 +9,23 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    chessboard.cpp \
+    chesspiece.cpp \
+    enddialog.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
 
 HEADERS += \
-    mainwindow.h
+    chessboard.h \
+    chesspiece.h \
+    chessrules.h \
+    enddialog.h \
+    mainwindow.h \
 
 FORMS += \
+    chessboard.ui \
+    chesspiece.ui \
+    enddialog.ui \
     mainwindow.ui
 
 # Default rules for deployment.
