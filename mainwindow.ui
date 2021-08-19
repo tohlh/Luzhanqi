@@ -116,6 +116,11 @@
     <string>Surrender</string>
    </property>
   </action>
+  <action name="actionMove">
+   <property name="text">
+    <string>Move</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

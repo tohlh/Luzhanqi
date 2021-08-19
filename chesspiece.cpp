@@ -126,6 +126,24 @@ void ChessPiece::setChess(int color, chessPieceTypedef face)
     }
 }
 
+
+void ChessPiece::setCoord(int x, int y)
+{
+    xCoord = x;
+    yCoord = y;
+}
+
+int ChessPiece::getXCoord()
+{
+    return xCoord;
+}
+
+int ChessPiece::getYCoord()
+{
+    return yCoord;
+}
+
+
 void ChessPiece::flipChess()
 {
     isFlipped = true;
@@ -137,7 +155,7 @@ void ChessPiece::mousePressEvent(QMouseEvent* event) {
         if (!isFlipped) {
             flipChess();
         } else {
-            // todo
+            // to do
         }
     } else {
         ChessPiece::mousePressEvent(event);

@@ -18,6 +18,7 @@ class Chessboard : public QWidget
 public:
     explicit Chessboard(QWidget *parent = nullptr);
     ~Chessboard();
+    ChessGrid *chessgrid;
     void arrangeChess();
 
 public slots:
@@ -27,7 +28,7 @@ public slots:
 private:
     Ui::Chessboard *ui;
     QGridLayout *layout = new QGridLayout();
-    ChessGrid *chessgrid;
+
 };
 
 #endif // CHESSBOARD_H

@@ -46,7 +46,7 @@
      <height>761</height>
     </size>
    </property>
-   <widget class="QLabel" name="grid_12_1">
+   <widget class="Grid" name="grid_12_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -62,7 +62,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_03_1">
+   <widget class="Grid" name="grid_03_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -78,7 +78,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_09_2">
+   <widget class="Grid" name="grid_09_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -94,7 +94,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_10_5">
+   <widget class="Grid" name="grid_10_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -110,7 +110,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_06_5">
+   <widget class="Grid" name="grid_06_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -126,7 +126,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_05_2">
+   <widget class="Grid" name="grid_05_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -142,7 +142,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_03_5">
+   <widget class="Grid" name="grid_03_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -158,7 +158,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_07_3">
+   <widget class="Grid" name="grid_07_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -174,7 +174,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_09_3">
+   <widget class="Grid" name="grid_09_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -190,7 +190,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_10_2">
+   <widget class="Grid" name="grid_10_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -206,7 +206,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_04_4">
+   <widget class="Grid" name="grid_04_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -222,7 +222,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_08_5">
+   <widget class="Grid" name="grid_08_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -238,7 +238,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_10_1">
+   <widget class="Grid" name="grid_10_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -254,7 +254,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_11_1">
+   <widget class="Grid" name="grid_11_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -270,7 +270,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_01_2">
+   <widget class="Grid" name="grid_01_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -286,7 +286,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_07_1">
+   <widget class="Grid" name="grid_07_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -302,7 +302,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_04_5">
+   <widget class="Grid" name="grid_04_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -318,7 +318,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_08_4">
+   <widget class="Grid" name="grid_08_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -334,7 +334,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_07_2">
+   <widget class="Grid" name="grid_07_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -350,7 +350,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_01_1">
+   <widget class="Grid" name="grid_01_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -366,7 +366,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_08_3">
+   <widget class="Grid" name="grid_08_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -382,7 +382,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_04_1">
+   <widget class="Grid" name="grid_04_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -398,7 +398,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_12_3">
+   <widget class="Grid" name="grid_12_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -414,7 +414,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_02_4">
+   <widget class="Grid" name="grid_02_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -430,7 +430,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_07_4">
+   <widget class="Grid" name="grid_07_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -446,7 +446,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_11_4">
+   <widget class="Grid" name="grid_11_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -462,7 +462,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_10_4">
+   <widget class="Grid" name="grid_10_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -478,7 +478,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_11_5">
+   <widget class="Grid" name="grid_11_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -494,7 +494,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_11_2">
+   <widget class="Grid" name="grid_11_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -510,7 +510,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_09_4">
+   <widget class="Grid" name="grid_09_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -526,7 +526,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_03_4">
+   <widget class="Grid" name="grid_03_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -542,7 +542,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_05_3">
+   <widget class="Grid" name="grid_05_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -558,7 +558,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_01_3">
+   <widget class="Grid" name="grid_01_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -574,7 +574,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_02_2">
+   <widget class="Grid" name="grid_02_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -590,7 +590,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_03_2">
+   <widget class="Grid" name="grid_03_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -606,7 +606,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_06_4">
+   <widget class="Grid" name="grid_06_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -622,7 +622,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_10_3">
+   <widget class="Grid" name="grid_10_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -638,7 +638,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_05_5">
+   <widget class="Grid" name="grid_05_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -654,7 +654,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_02_1">
+   <widget class="Grid" name="grid_02_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -670,7 +670,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_09_1">
+   <widget class="Grid" name="grid_09_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -686,7 +686,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_02_5">
+   <widget class="Grid" name="grid_02_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -702,7 +702,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_02_3">
+   <widget class="Grid" name="grid_02_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -718,7 +718,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_08_1">
+   <widget class="Grid" name="grid_08_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -734,7 +734,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_01_5">
+   <widget class="Grid" name="grid_01_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -750,7 +750,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_12_2">
+   <widget class="Grid" name="grid_12_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -766,7 +766,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_12_5">
+   <widget class="Grid" name="grid_12_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -782,7 +782,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_07_5">
+   <widget class="Grid" name="grid_07_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -798,7 +798,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_08_2">
+   <widget class="Grid" name="grid_08_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -814,7 +814,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_12_4">
+   <widget class="Grid" name="grid_12_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -830,7 +830,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_11_3">
+   <widget class="Grid" name="grid_11_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -846,7 +846,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_03_3">
+   <widget class="Grid" name="grid_03_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -862,7 +862,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_06_2">
+   <widget class="Grid" name="grid_06_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -878,7 +878,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_09_5">
+   <widget class="Grid" name="grid_09_5">
     <property name="geometry">
      <rect>
       <x>408</x>
@@ -894,7 +894,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_04_3">
+   <widget class="Grid" name="grid_04_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -910,7 +910,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_05_4">
+   <widget class="Grid" name="grid_05_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -926,7 +926,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_06_3">
+   <widget class="Grid" name="grid_06_3">
     <property name="geometry">
      <rect>
       <x>208</x>
@@ -942,7 +942,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_05_1">
+   <widget class="Grid" name="grid_05_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -958,7 +958,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_04_2">
+   <widget class="Grid" name="grid_04_2">
     <property name="geometry">
      <rect>
       <x>108</x>
@@ -974,7 +974,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_01_4">
+   <widget class="Grid" name="grid_01_4">
     <property name="geometry">
      <rect>
       <x>308</x>
@@ -990,7 +990,7 @@
      <bool>true</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="grid_06_1">
+   <widget class="Grid" name="grid_06_1">
     <property name="geometry">
      <rect>
       <x>8</x>
@@ -2885,6 +2885,11 @@
    <class>ChessPiece</class>
    <extends>QLabel</extends>
    <header>chesspiece.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Grid</class>
+   <extends>QLabel</extends>
+   <header>grid.h</header>
   </customwidget>
  </customwidgets>
  <resources>

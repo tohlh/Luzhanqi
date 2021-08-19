@@ -11,17 +11,23 @@ class ChessPiece : public QLabel
     Q_OBJECT
 
 public:
-    explicit ChessPiece(QWidget *parent = nullptr);
+    ChessPiece(QWidget *parent = nullptr);
     ~ChessPiece();
     void setChess(int color, chessPieceTypedef face);
 
-public slots:
-    void flipChess();
+    void setCoord(int x, int y);
+    int getXCoord();
+    int getYCoord();
+
+    int x, y;
 
 protected:
     void mousePressEvent(QMouseEvent* event);
 
 private:
+    void flipChess();
+
+    int xCoord, yCoord;
     bool isFlipped = false;
     int chessColor; //1 red, 2 blue
     chessPieceTypedef chessType;

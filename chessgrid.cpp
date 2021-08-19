@@ -6,18 +6,19 @@ ChessGrid::ChessGrid(QWidget *parent) :
     ui(new Ui::ChessGrid)
 {
     ui->setupUi(this);
-}
 
-ChessGrid::~ChessGrid()
-{
-    delete ui;
-}
-
-void ChessGrid::arrangeChess()
-{
-    QRandomGenerator rand(QDateTime::currentMSecsSinceEpoch() / 1000);
-    //ui->chess_03->setChess(0, junqi);
-    //ui->chess_48->setChess(1, junqi);
+    QList <Grid*> grids = { ui->grid_01_1, ui->grid_01_2, ui->grid_01_3, ui->grid_01_4, ui->grid_01_5,
+                            ui->grid_02_1, ui->grid_02_2, ui->grid_02_3, ui->grid_02_4, ui->grid_02_5,
+                            ui->grid_03_1, ui->grid_03_2, ui->grid_03_3, ui->grid_03_4, ui->grid_03_5,
+                            ui->grid_04_1, ui->grid_04_2, ui->grid_04_3, ui->grid_04_4, ui->grid_04_5,
+                            ui->grid_05_1, ui->grid_05_2, ui->grid_05_3, ui->grid_05_4, ui->grid_05_5,
+                            ui->grid_06_1, ui->grid_06_2, ui->grid_06_3, ui->grid_06_4, ui->grid_06_5,
+                            ui->grid_07_1, ui->grid_07_2, ui->grid_07_3, ui->grid_07_4, ui->grid_07_5,
+                            ui->grid_08_1, ui->grid_08_2, ui->grid_08_3, ui->grid_08_4, ui->grid_08_5,
+                            ui->grid_09_1, ui->grid_09_2, ui->grid_09_3, ui->grid_09_4, ui->grid_09_5,
+                            ui->grid_10_1, ui->grid_10_2, ui->grid_10_3, ui->grid_10_4, ui->grid_10_5,
+                            ui->grid_11_1, ui->grid_11_2, ui->grid_11_3, ui->grid_11_4, ui->grid_11_5,
+                            ui->grid_12_1, ui->grid_12_2, ui->grid_12_3, ui->grid_12_4, ui->grid_12_5 };
 
     QList <ChessPiece*> chesspieces = { ui->chess_01, ui->chess_02, ui->chess_03, ui->chess_04, ui->chess_05,
                                         ui->chess_06, ui->chess_07, ui->chess_08, ui->chess_09, ui->chess_10,
@@ -30,6 +31,69 @@ void ChessGrid::arrangeChess()
                                         ui->chess_41, ui->chess_42, ui->chess_43, ui->chess_44, ui->chess_45,
                                         ui->chess_46, ui->chess_47, ui->chess_48, ui->chess_49, ui->chess_50 };
 
+    for (int i = 0; i < grids.size(); i++) {
+        int x = (i % 5) + 1;
+        int y = (i / 5) + 1;
+        grids[i]->setCoord(x, y);
+    }
+
+    for (int i = 0; i < 10; i++) {
+        int x = (i % 5) + 1;
+        int y = (i / 5) + 1;
+        chesspieces[i]->setCoord(x, y);
+    }
+
+    for (int i = 20; i < 25; i++) {
+        int x = (i % 5) + 1;
+        int y = 6;
+        chesspieces[i]->setCoord(x, y);
+    }
+
+    for (int i = 25; i < 30; i++) {
+        int x = (i % 5) + 1;
+        int y = 7;
+        chesspieces[i]->setCoord(x, y);
+    }
+
+    for (int i = 40; i < 50; i++) {
+        int x = (i % 5) + 1;
+        int y = (i / 5) + 3;
+        chesspieces[i]->setCoord(x, y);
+    }
+
+    chesspieces[10]->setCoord(1, 3);
+    chesspieces[11]->setCoord(3, 3);
+    chesspieces[12]->setCoord(5, 3);
+    chesspieces[13]->setCoord(1, 4);
+    chesspieces[14]->setCoord(2, 4);
+    chesspieces[15]->setCoord(4, 4);
+    chesspieces[16]->setCoord(5, 4);
+    chesspieces[17]->setCoord(1, 5);
+    chesspieces[18]->setCoord(3, 5);
+    chesspieces[19]->setCoord(5, 5);
+
+    chesspieces[30]->setCoord(1, 8);
+    chesspieces[31]->setCoord(3, 8);
+    chesspieces[32]->setCoord(5, 8);
+    chesspieces[33]->setCoord(1, 9);
+    chesspieces[34]->setCoord(2, 9);
+    chesspieces[35]->setCoord(4, 9);
+    chesspieces[36]->setCoord(5, 9);
+    chesspieces[37]->setCoord(1, 10);
+    chesspieces[38]->setCoord(3, 10);
+    chesspieces[39]->setCoord(5, 10);
+
+    arrangeChess(chesspieces);
+}
+
+ChessGrid::~ChessGrid()
+{
+    delete ui;
+}
+
+void ChessGrid::arrangeChess(QList <ChessPiece*> chesspieces)
+{
+    QRandomGenerator rand(QDateTime::currentMSecsSinceEpoch() / 1000);
     QList <int> chessID;
     for (int i = 0; i < 50; i++) {
         chessID.append(i);
@@ -43,6 +107,15 @@ void ChessGrid::arrangeChess()
         chesspieces[i]->setChess(color, type);
         chessID.remove(index);
     }
+}
+
+/*
+ * x, y, grid coordinate
+ */
+void ChessGrid::moveChess(ChessPiece* chess, int x, int y) {
+    QList <int> xCoord = {8, 108, 208, 308, 408};
+    QList <int> yCoord = {8, 60, 112, 164, 216, 268, 438, 490, 542, 594, 646, 698};
+    chess->move(xCoord[x], yCoord[y]);
 }
 
 /*

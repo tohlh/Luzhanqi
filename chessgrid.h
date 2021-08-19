@@ -18,7 +18,8 @@ public:
     explicit ChessGrid(QWidget *parent = nullptr);
     ~ChessGrid();
 
-    void arrangeChess();
+    void arrangeChess(QList <ChessPiece*> chesspieces);
+    void moveChess(ChessPiece* chess, int x, int y);
 
 private:
     chessPieceTypedef getChessTypeFromID(int ID);

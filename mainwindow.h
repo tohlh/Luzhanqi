@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QVBoxLayout>
 #include "chessboard.h"
+#include "chessgrid.h"
+#include "chesspiece.h"
 #include "enddialog.h"
 
 QT_BEGIN_NAMESPACE
