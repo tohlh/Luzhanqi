@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChessGrid</class>
+ <widget class="QWidget" name="ChessGrid">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>530</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>530</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>530</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="grid_1_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_1_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_1_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_1_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_1_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_2_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_2_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_2_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_2_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_2_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_3_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_3_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_3_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_3_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_3_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_4_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_4_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_4_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_4_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_4_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_5_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_5_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_5_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_5_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_5_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_6_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_6_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_6_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_6_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_6_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_7_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_11_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>646</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_10_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_12_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_11_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>646</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_10_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_12_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_7_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_10_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_12_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_7_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_8_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_9_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_10_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_8_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_11_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>646</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_11_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>646</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_8_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_10_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_9_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_9_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_9_1">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_7_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_12_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_11_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>646</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_8_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_12_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_9_4">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_7_2">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="grid_8_3">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
