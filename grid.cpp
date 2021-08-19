@@ -24,8 +24,6 @@ int Grid::getYCoord()
 void Grid::mousePressEvent(QMouseEvent* event)
 {
     if (event->button() == Qt::LeftButton) {
-
-    } else {
-
+        emit sendAction(-1, xCoord, yCoord);
     }
 }

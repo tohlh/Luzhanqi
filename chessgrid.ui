@@ -25,2860 +25,2926 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QWidget" name="grids" native="true">
+  <widget class="Grid" name="grid_05_1">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>507</width>
-     <height>761</height>
+     <x>8</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
     </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_11_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>642</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_05_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_01_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_04_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_10_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_01_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_07_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_01_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_02_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_03_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_04_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_10_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_10_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_03_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_07_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_08_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_03_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_02_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_04_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_02_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_09_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_09_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_12_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_05_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_05_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_09_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_10_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_06_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_02_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_11_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>642</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_12_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_02_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_09_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_10_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_12_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_12_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_08_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_01_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_07_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_05_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_12_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_06_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_04_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_01_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_04_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_08_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_11_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>642</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_11_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>642</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_03_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_11_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>642</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_08_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_09_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_06_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_06_4">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_08_5">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_06_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_07_3">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_07_1">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="Grid" name="grid_03_2">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_06">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="minimumSize">
     <size>
-     <width>507</width>
-     <height>761</height>
+     <width>88</width>
+     <height>47</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>507</width>
-     <height>761</height>
+     <width>88</width>
+     <height>47</height>
     </size>
    </property>
-   <widget class="Grid" name="grid_12_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>698</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_03_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>112</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_09_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>542</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_10_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>594</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_06_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>268</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_05_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>216</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_03_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>112</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_07_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>438</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_09_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>542</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_10_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>594</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_04_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>164</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_08_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>490</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_10_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>594</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_11_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>646</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_01_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>8</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_07_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>438</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_04_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>164</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_08_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>490</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_07_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>438</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_01_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>8</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_08_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>490</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_04_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>164</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_12_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>698</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_02_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>60</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_07_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>438</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_11_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>646</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_10_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>594</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_11_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>646</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_11_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>646</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_09_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>542</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_03_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>112</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_05_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>216</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_01_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>8</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_02_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>60</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_03_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>112</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_06_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>268</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_10_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>594</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_05_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>216</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_02_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>60</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_09_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>542</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_02_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>60</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_02_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>60</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_08_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>490</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_01_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>8</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_12_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>698</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_12_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>698</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_07_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>438</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_08_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>490</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_12_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>698</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_11_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>646</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_03_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>112</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_06_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>268</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_09_5">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>542</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_04_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>164</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_05_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>216</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_06_3">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>268</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_05_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>216</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_04_2">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>164</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_01_4">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>8</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="Grid" name="grid_06_1">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>268</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
   </widget>
-  <widget class="QWidget" name="chesspieces" native="true">
+  <widget class="ChessPiece" name="chess_36">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>507</width>
-     <height>761</height>
+     <x>308</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="minimumSize">
     <size>
-     <width>507</width>
-     <height>761</height>
+     <width>88</width>
+     <height>47</height>
     </size>
    </property>
    <property name="maximumSize">
     <size>
-     <width>507</width>
-     <height>761</height>
+     <width>88</width>
+     <height>47</height>
     </size>
    </property>
-   <widget class="ChessPiece" name="chess_46">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>698</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_11">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>112</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_35">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>542</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_40">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>594</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_25">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>268</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_13">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>112</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_28">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>438</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_16">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>164</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_33">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>490</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_38">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>594</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_41">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>646</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_02">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>8</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_26">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>438</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_17">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>164</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_27">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>438</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_01">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>8</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_32">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>490</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_14">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>164</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_48">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>698</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_09">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>60</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_29">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>438</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_44">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>646</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_45">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>646</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_42">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>646</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_36">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>542</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_19">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>216</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_03">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>8</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_07">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>60</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_24">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>268</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_39">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>594</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_20">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>216</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_06">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>60</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_34">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>542</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_10">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>60</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_08">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>60</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_31">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>490</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_05">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>8</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_47">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>698</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_50">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>698</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_30">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>438</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_49">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>698</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_43">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>646</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_12">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>112</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_22">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>268</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_37">
-    <property name="geometry">
-     <rect>
-      <x>408</x>
-      <y>542</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_23">
-    <property name="geometry">
-     <rect>
-      <x>208</x>
-      <y>268</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_18">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>216</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_15">
-    <property name="geometry">
-     <rect>
-      <x>108</x>
-      <y>164</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_04">
-    <property name="geometry">
-     <rect>
-      <x>308</x>
-      <y>8</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
-   <widget class="ChessPiece" name="chess_21">
-    <property name="geometry">
-     <rect>
-      <x>8</x>
-      <y>268</y>
-      <width>88</width>
-      <height>47</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-    <property name="minimumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>88</width>
-      <height>47</height>
-     </size>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-    <property name="pixmap">
-     <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
-    </property>
-    <property name="scaledContents">
-     <bool>true</bool>
-    </property>
-   </widget>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
   </widget>
+  <widget class="ChessPiece" name="chess_42">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>646</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_39">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_01">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_33">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_08">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_31">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_30">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_43">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>646</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_46">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_28">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_40">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_27">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_45">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>646</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_34">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_50">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_49">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_14">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_47">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_23">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_22">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_05">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_35">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_12">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_20">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_16">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_19">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_10">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_18">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>216</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_13">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_03">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_29">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_17">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_37">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>542</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_11">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>112</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_15">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>164</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_41">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>646</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_32">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>490</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_25">
+   <property name="geometry">
+    <rect>
+     <x>408</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_09">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_26">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>438</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_38">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>594</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_24">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_21">
+   <property name="geometry">
+    <rect>
+     <x>8</x>
+     <y>268</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_04">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_48">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>698</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_02">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>8</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_44">
+   <property name="geometry">
+    <rect>
+     <x>308</x>
+     <y>646</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="ChessPiece" name="chess_07">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>60</y>
+     <width>88</width>
+     <height>47</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>88</width>
+     <height>47</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>grid_05_1</zorder>
+  <zorder>grid_11_1</zorder>
+  <zorder>grid_05_3</zorder>
+  <zorder>grid_01_2</zorder>
+  <zorder>grid_04_4</zorder>
+  <zorder>grid_10_3</zorder>
+  <zorder>grid_01_5</zorder>
+  <zorder>grid_07_4</zorder>
+  <zorder>grid_01_1</zorder>
+  <zorder>grid_02_5</zorder>
+  <zorder>grid_03_4</zorder>
+  <zorder>grid_04_2</zorder>
+  <zorder>grid_10_5</zorder>
+  <zorder>grid_10_2</zorder>
+  <zorder>grid_03_5</zorder>
+  <zorder>grid_07_5</zorder>
+  <zorder>grid_08_3</zorder>
+  <zorder>grid_03_3</zorder>
+  <zorder>grid_02_1</zorder>
+  <zorder>grid_04_5</zorder>
+  <zorder>grid_02_4</zorder>
+  <zorder>grid_09_4</zorder>
+  <zorder>grid_09_5</zorder>
+  <zorder>grid_12_2</zorder>
+  <zorder>grid_05_5</zorder>
+  <zorder>grid_05_2</zorder>
+  <zorder>grid_09_1</zorder>
+  <zorder>grid_10_4</zorder>
+  <zorder>grid_06_5</zorder>
+  <zorder>grid_02_3</zorder>
+  <zorder>grid_11_4</zorder>
+  <zorder>grid_12_4</zorder>
+  <zorder>grid_02_2</zorder>
+  <zorder>grid_09_3</zorder>
+  <zorder>grid_10_1</zorder>
+  <zorder>grid_12_3</zorder>
+  <zorder>grid_12_5</zorder>
+  <zorder>grid_08_4</zorder>
+  <zorder>grid_01_3</zorder>
+  <zorder>grid_07_2</zorder>
+  <zorder>grid_05_4</zorder>
+  <zorder>grid_12_1</zorder>
+  <zorder>grid_06_3</zorder>
+  <zorder>grid_04_3</zorder>
+  <zorder>grid_01_4</zorder>
+  <zorder>grid_04_1</zorder>
+  <zorder>grid_08_2</zorder>
+  <zorder>grid_11_3</zorder>
+  <zorder>grid_11_2</zorder>
+  <zorder>grid_03_1</zorder>
+  <zorder>grid_11_5</zorder>
+  <zorder>grid_08_1</zorder>
+  <zorder>grid_09_2</zorder>
+  <zorder>grid_06_1</zorder>
+  <zorder>grid_06_4</zorder>
+  <zorder>grid_08_5</zorder>
+  <zorder>grid_06_2</zorder>
+  <zorder>grid_07_3</zorder>
+  <zorder>grid_07_1</zorder>
+  <zorder>grid_03_2</zorder>
+  <zorder>chess_12</zorder>
+  <zorder>chess_20</zorder>
+  <zorder>chess_32</zorder>
+  <zorder>chess_01</zorder>
+  <zorder>chess_29</zorder>
+  <zorder>chess_35</zorder>
+  <zorder>chess_44</zorder>
+  <zorder>chess_30</zorder>
+  <zorder>chess_41</zorder>
+  <zorder>chess_11</zorder>
+  <zorder>chess_48</zorder>
+  <zorder>chess_47</zorder>
+  <zorder>chess_38</zorder>
+  <zorder>chess_23</zorder>
+  <zorder>chess_03</zorder>
+  <zorder>chess_37</zorder>
+  <zorder>chess_50</zorder>
+  <zorder>chess_21</zorder>
+  <zorder>chess_45</zorder>
+  <zorder>chess_39</zorder>
+  <zorder>chess_19</zorder>
+  <zorder>chess_31</zorder>
+  <zorder>chess_08</zorder>
+  <zorder>chess_33</zorder>
+  <zorder>chess_13</zorder>
+  <zorder>chess_14</zorder>
+  <zorder>chess_28</zorder>
+  <zorder>chess_36</zorder>
+  <zorder>chess_10</zorder>
+  <zorder>chess_04</zorder>
+  <zorder>chess_46</zorder>
+  <zorder>chess_25</zorder>
+  <zorder>chess_22</zorder>
+  <zorder>chess_40</zorder>
+  <zorder>chess_27</zorder>
+  <zorder>chess_16</zorder>
+  <zorder>chess_26</zorder>
+  <zorder>chess_24</zorder>
+  <zorder>chess_43</zorder>
+  <zorder>chess_18</zorder>
+  <zorder>chess_34</zorder>
+  <zorder>chess_42</zorder>
+  <zorder>chess_05</zorder>
+  <zorder>chess_49</zorder>
+  <zorder>chess_17</zorder>
+  <zorder>chess_07</zorder>
+  <zorder>chess_02</zorder>
+  <zorder>chess_06</zorder>
+  <zorder>chess_09</zorder>
+  <zorder>chess_15</zorder>
  </widget>
  <customwidgets>
   <customwidget>

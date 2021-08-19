@@ -16,6 +16,9 @@ public:
     int getXCoord();
     int getYCoord();
 
+signals:
+    void sendAction(int id, int xCoord, int yCoord);
+
 protected:
     void mousePressEvent(QMouseEvent* event);
     int xCoord, yCoord;

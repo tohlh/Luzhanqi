@@ -8,29 +8,29 @@ ChessGrid::ChessGrid(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    QList <Grid*> grids = { ui->grid_01_1, ui->grid_01_2, ui->grid_01_3, ui->grid_01_4, ui->grid_01_5,
-                            ui->grid_02_1, ui->grid_02_2, ui->grid_02_3, ui->grid_02_4, ui->grid_02_5,
-                            ui->grid_03_1, ui->grid_03_2, ui->grid_03_3, ui->grid_03_4, ui->grid_03_5,
-                            ui->grid_04_1, ui->grid_04_2, ui->grid_04_3, ui->grid_04_4, ui->grid_04_5,
-                            ui->grid_05_1, ui->grid_05_2, ui->grid_05_3, ui->grid_05_4, ui->grid_05_5,
-                            ui->grid_06_1, ui->grid_06_2, ui->grid_06_3, ui->grid_06_4, ui->grid_06_5,
-                            ui->grid_07_1, ui->grid_07_2, ui->grid_07_3, ui->grid_07_4, ui->grid_07_5,
-                            ui->grid_08_1, ui->grid_08_2, ui->grid_08_3, ui->grid_08_4, ui->grid_08_5,
-                            ui->grid_09_1, ui->grid_09_2, ui->grid_09_3, ui->grid_09_4, ui->grid_09_5,
-                            ui->grid_10_1, ui->grid_10_2, ui->grid_10_3, ui->grid_10_4, ui->grid_10_5,
-                            ui->grid_11_1, ui->grid_11_2, ui->grid_11_3, ui->grid_11_4, ui->grid_11_5,
-                            ui->grid_12_1, ui->grid_12_2, ui->grid_12_3, ui->grid_12_4, ui->grid_12_5 };
+    grids = { ui->grid_01_1, ui->grid_01_2, ui->grid_01_3, ui->grid_01_4, ui->grid_01_5,
+              ui->grid_02_1, ui->grid_02_2, ui->grid_02_3, ui->grid_02_4, ui->grid_02_5,
+              ui->grid_03_1, ui->grid_03_2, ui->grid_03_3, ui->grid_03_4, ui->grid_03_5,
+              ui->grid_04_1, ui->grid_04_2, ui->grid_04_3, ui->grid_04_4, ui->grid_04_5,
+              ui->grid_05_1, ui->grid_05_2, ui->grid_05_3, ui->grid_05_4, ui->grid_05_5,
+              ui->grid_06_1, ui->grid_06_2, ui->grid_06_3, ui->grid_06_4, ui->grid_06_5,
+              ui->grid_07_1, ui->grid_07_2, ui->grid_07_3, ui->grid_07_4, ui->grid_07_5,
+              ui->grid_08_1, ui->grid_08_2, ui->grid_08_3, ui->grid_08_4, ui->grid_08_5,
+              ui->grid_09_1, ui->grid_09_2, ui->grid_09_3, ui->grid_09_4, ui->grid_09_5,
+              ui->grid_10_1, ui->grid_10_2, ui->grid_10_3, ui->grid_10_4, ui->grid_10_5,
+              ui->grid_11_1, ui->grid_11_2, ui->grid_11_3, ui->grid_11_4, ui->grid_11_5,
+              ui->grid_12_1, ui->grid_12_2, ui->grid_12_3, ui->grid_12_4, ui->grid_12_5 };
 
-    QList <ChessPiece*> chesspieces = { ui->chess_01, ui->chess_02, ui->chess_03, ui->chess_04, ui->chess_05,
-                                        ui->chess_06, ui->chess_07, ui->chess_08, ui->chess_09, ui->chess_10,
-                                        ui->chess_11, ui->chess_12, ui->chess_13, ui->chess_14, ui->chess_15,
-                                        ui->chess_16, ui->chess_17, ui->chess_18, ui->chess_19, ui->chess_20,
-                                        ui->chess_21, ui->chess_22, ui->chess_23, ui->chess_24, ui->chess_25,
-                                        ui->chess_26, ui->chess_27, ui->chess_28, ui->chess_29, ui->chess_30,
-                                        ui->chess_31, ui->chess_32, ui->chess_33, ui->chess_34, ui->chess_35,
-                                        ui->chess_36, ui->chess_37, ui->chess_38, ui->chess_39, ui->chess_40,
-                                        ui->chess_41, ui->chess_42, ui->chess_43, ui->chess_44, ui->chess_45,
-                                        ui->chess_46, ui->chess_47, ui->chess_48, ui->chess_49, ui->chess_50 };
+    chesspieces = { ui->chess_01, ui->chess_02, ui->chess_03, ui->chess_04, ui->chess_05,
+                    ui->chess_06, ui->chess_07, ui->chess_08, ui->chess_09, ui->chess_10,
+                    ui->chess_11, ui->chess_12, ui->chess_13, ui->chess_14, ui->chess_15,
+                    ui->chess_16, ui->chess_17, ui->chess_18, ui->chess_19, ui->chess_20,
+                    ui->chess_21, ui->chess_22, ui->chess_23, ui->chess_24, ui->chess_25,
+                    ui->chess_26, ui->chess_27, ui->chess_28, ui->chess_29, ui->chess_30,
+                    ui->chess_31, ui->chess_32, ui->chess_33, ui->chess_34, ui->chess_35,
+                    ui->chess_36, ui->chess_37, ui->chess_38, ui->chess_39, ui->chess_40,
+                    ui->chess_41, ui->chess_42, ui->chess_43, ui->chess_44, ui->chess_45,
+                    ui->chess_46, ui->chess_47, ui->chess_48, ui->chess_49, ui->chess_50 };
 
     for (int i = 0; i < grids.size(); i++) {
         int x = (i % 5) + 1;
@@ -85,6 +85,12 @@ ChessGrid::ChessGrid(QWidget *parent) :
     chesspieces[39]->setCoord(5, 10);
 
     arrangeChess(chesspieces);
+
+    for (int i = 0; i < chesspieces.size(); i ++) {
+        QObject::connect(chesspieces[i], SIGNAL(sendAction(int, int, int)), this, SLOT(appendAction(int, int, int)));
+        QObject::connect(grids[i], SIGNAL(sendAction(int, int, int)), this, SLOT(appendAction(int, int, int)));
+    }
+
 }
 
 ChessGrid::~ChessGrid()
@@ -111,13 +117,36 @@ void ChessGrid::arrangeChess(QList <ChessPiece*> chesspieces)
     }
 }
 
+void ChessGrid::appendAction(int id, int xCoord, int yCoord)
+{
+    actionStruct newAction;
+    newAction.id = id;
+    newAction.xCoord = xCoord;
+    newAction.yCoord = yCoord;
+
+    if (!actionStack.empty()) {
+        if (newAction.id == -1 && actionStack.top().id > 0) {
+            moveChess(actionStack.top().id, newAction.xCoord, newAction.yCoord);
+            return;
+        }
+    }
+
+    actionStack.push(newAction);
+
+    qInfo() << "ID = " << id << ", xCoord = " << xCoord << ", yCoord = " << yCoord;
+}
+
 /*
  * x, y, grid coordinate
  */
-void ChessGrid::moveChess(ChessPiece* chess, int x, int y) {
-    QList <int> xCoord = {8, 108, 208, 308, 408};
-    QList <int> yCoord = {8, 60, 112, 164, 216, 268, 438, 490, 542, 594, 646, 698};
-    chess->move(xCoord[x], yCoord[y]);
+void ChessGrid::moveChess(int id, int x, int y) {
+    ChessPiece* toMove;
+    for (int i = 0; i < chesspieces.size(); i++) {
+        if (chesspieces[i]->getID() == id) {
+            toMove = chesspieces[i];
+        }
+    }
+    toMove->move(xCoord[x], yCoord[y]);
 }
 
 /*
