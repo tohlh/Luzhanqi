@@ -15,11 +15,11 @@ public:
     ~ChessPiece();
     void setChess(int color, chessPieceTypedef face);
 
+    void setID(int i);
+    int getID();
     void setCoord(int x, int y);
     int getXCoord();
     int getYCoord();
-
-    int x, y;
 
 protected:
     void mousePressEvent(QMouseEvent* event);
@@ -27,7 +27,7 @@ protected:
 private:
     void flipChess();
 
-    int xCoord, yCoord;
+    int ID, xCoord, yCoord;
     bool isFlipped = false;
     int chessColor; //1 red, 2 blue
     chessPieceTypedef chessType;

@@ -1,6 +1,7 @@
 #include "chessgrid.h"
 #include "ui_chessgrid.h"
 
+/* Initailise the whole grid. Assign grid coordinates to all the grids and chesspieces, shuffle the chesspieces. */
 ChessGrid::ChessGrid(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::ChessGrid)
@@ -99,12 +100,13 @@ void ChessGrid::arrangeChess(QList <ChessPiece*> chesspieces)
         chessID.append(i);
     }
 
-    for (int i = 0; i < 50; i++) {
+    for (int i = 0; i < chesspieces.size(); i++) {
         int index = rand.generate() % chessID.size();
         int currChessID = chessID[index];
         int color = currChessID > 25 ? 0 : 1;
         chessPieceTypedef type = getChessTypeFromID(currChessID % 25);
         chesspieces[i]->setChess(color, type);
+        chesspieces[i]->setID(i + 1);
         chessID.remove(index);
     }
 }

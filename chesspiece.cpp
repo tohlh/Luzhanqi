@@ -126,6 +126,15 @@ void ChessPiece::setChess(int color, chessPieceTypedef face)
     }
 }
 
+void ChessPiece::setID(int i)
+{
+    ID = i;
+}
+
+int ChessPiece::getID()
+{
+    return ID;
+}
 
 void ChessPiece::setCoord(int x, int y)
 {
@@ -154,8 +163,6 @@ void ChessPiece::mousePressEvent(QMouseEvent* event) {
     if (event->button() == Qt::LeftButton) {
         if (!isFlipped) {
             flipChess();
-        } else {
-            // to do
         }
     } else {
         ChessPiece::mousePressEvent(event);

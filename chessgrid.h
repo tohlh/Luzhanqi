@@ -5,6 +5,7 @@
 #include <QRandomGenerator>
 #include <QDateTime>
 #include "chesspiece.h"
+#include "grid.h"
 
 namespace Ui {
 class ChessGrid;
@@ -17,12 +18,14 @@ class ChessGrid : public QWidget
 public:
     explicit ChessGrid(QWidget *parent = nullptr);
     ~ChessGrid();
-
-    void arrangeChess(QList <ChessPiece*> chesspieces);
     void moveChess(ChessPiece* chess, int x, int y);
 
 private:
+    void arrangeChess(QList <ChessPiece*> chesspieces);
     chessPieceTypedef getChessTypeFromID(int ID);
+
+    ChessPiece *chesspiece = new ChessPiece();
+    Grid *grid = new Grid();
     Ui::ChessGrid *ui;
 };
 
