@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QGridLayout>
+#include "chessgrid.h"
 #include "chesspiece.h"
 #include "chessrules.h"
 
@@ -26,6 +27,7 @@ public slots:
 private:
     Ui::Chessboard *ui;
     QGridLayout *layout = new QGridLayout();
+    ChessGrid *chessgrid = new ChessGrid();
 };
 
 #endif // CHESSBOARD_H

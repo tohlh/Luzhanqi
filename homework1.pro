@@ -10,6 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     chessboard.cpp \
+    chessgrid.cpp \
     chesspiece.cpp \
     enddialog.cpp \
     main.cpp \
@@ -17,6 +18,7 @@ SOURCES += \
 
 HEADERS += \
     chessboard.h \
+    chessgrid.h \
     chesspiece.h \
     chessrules.h \
     enddialog.h \
@@ -24,6 +26,7 @@ HEADERS += \
 
 FORMS += \
     chessboard.ui \
+    chessgrid.ui \
     chesspiece.ui \
     enddialog.ui \
     mainwindow.ui

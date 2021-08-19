@@ -6,9 +6,6 @@ Chessboard::Chessboard(QWidget *parent) :
     ui(new Ui::Chessboard)
 {
     ui->setupUi(this);
-
-    //grid->setVisible(false);
-    //layout->addWidget(grid);
     this->setLayout(layout);
 }
 
@@ -19,24 +16,27 @@ Chessboard::~Chessboard()
 
 void Chessboard::setBlankChessboard()
 {
-    QPixmap blankChessboard(":/images/棋盘.png");
-    ui->chessboard->setPixmap(blankChessboard);
+    QPixmap chessboard(":/images/棋盘.png");
+    ui->chessboardBackground->setPixmap(chessboard);
 
-    //grid->setVisible(false);
+    if (chessgrid) {
+        layout->removeWidget(chessgrid);
+        delete (chessgrid);
+    }
+    chessgrid = new ChessGrid();
     this->setLayout(layout);
 }
 
 void Chessboard::setNewChessboard()
 {
-    QPixmap blankChessboard(":/images/棋盘背景.jpg");
-    ui->chessboard->setPixmap(blankChessboard);
+    QPixmap chessboard(":/images/空棋盘.png");
+    ui->chessboardBackground->setPixmap(chessboard);
 
-    //grid->setVisible(true);
+    layout->addWidget(chessgrid, 0, 0);
     this->setLayout(layout);
+    //arrangeChess();
 }
 
-void Chessboard::arrangeChess() {
-    ChessPiece *piece = new ChessPiece(1, gongbing);
-    layout->addWidget(piece, 0, 0);
-    this->setLayout(layout);
+void Chessboard::arrangeChess()
+{
 }
