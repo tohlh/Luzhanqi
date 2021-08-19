@@ -13,9 +13,7 @@ class ChessPiece : public QLabel
 public:
     explicit ChessPiece(QWidget *parent = nullptr);
     ~ChessPiece();
-
-    void setColor(int color);
-    void setFace(chessPieceTypedef face);
+    void setChess(int color, chessPieceTypedef face);
 
 public slots:
     void flipChess();

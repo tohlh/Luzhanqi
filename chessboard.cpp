@@ -23,7 +23,6 @@ void Chessboard::setBlankChessboard()
         layout->removeWidget(chessgrid);
         delete (chessgrid);
     }
-    chessgrid = new ChessGrid();
     this->setLayout(layout);
 }
 
@@ -32,11 +31,8 @@ void Chessboard::setNewChessboard()
     QPixmap chessboard(":/images/空棋盘.png");
     ui->chessboardBackground->setPixmap(chessboard);
 
+    chessgrid = new ChessGrid();
+    chessgrid->arrangeChess();
     layout->addWidget(chessgrid, 0, 0);
     this->setLayout(layout);
-    //arrangeChess();
-}
-
-void Chessboard::arrangeChess()
-{
 }

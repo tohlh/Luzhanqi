@@ -6,9 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>530</width>
+    <width>550</width>
     <height>780</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>550</width>
+    <height>780</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>550</width>
+    <height>780</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Form</string>
@@ -16,7 +28,7 @@
   <widget class="QLabel" name="chessboardBackground">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>20</x>
      <y>10</y>
      <width>507</width>
      <height>761</height>

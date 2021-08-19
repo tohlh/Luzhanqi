@@ -27,7 +27,7 @@ public slots:
 private:
     Ui::Chessboard *ui;
     QGridLayout *layout = new QGridLayout();
-    ChessGrid *chessgrid = new ChessGrid();
+    ChessGrid *chessgrid;
 };
 
 #endif // CHESSBOARD_H

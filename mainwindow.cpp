@@ -6,9 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
-    layout->addWidget(chessboard, 0, 0);
-    ui->centralwidget->setLayout(layout);
+    ui->chessboardLayout->addWidget(chessboard);
     QObject::connect(this, SIGNAL(gameStarted()), this, SLOT(initGame()));
     QObject::connect(this, SIGNAL(gameStarted()), chessboard, SLOT(setNewChessboard()));
     QObject::connect(this, SIGNAL(gameEnded()), this, SLOT(endGame()));

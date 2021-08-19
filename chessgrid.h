@@ -2,6 +2,8 @@
 #define CHESSGRID_H
 
 #include <QWidget>
+#include <QRandomGenerator>
+#include <QDateTime>
 #include "chesspiece.h"
 
 namespace Ui {
@@ -19,6 +21,7 @@ public:
     void arrangeChess();
 
 private:
+    chessPieceTypedef getChessTypeFromID(int ID);
     Ui::ChessGrid *ui;
 };
 

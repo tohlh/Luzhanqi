@@ -2,9 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QGraphicsScene>
-#include <QGraphicsItem>
-#include <QGridLayout>
+#include <QVBoxLayout>
 #include "chessboard.h"
 #include "enddialog.h"
 
@@ -34,7 +32,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-    QGridLayout *layout = new QGridLayout();
+    QVBoxLayout *layout = new QVBoxLayout();
     Chessboard *chessboard = new Chessboard();
 };
 #endif // MAINWINDOW_H
