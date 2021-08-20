@@ -21,9 +21,34 @@ int Grid::getYCoord()
     return yCoord;
 }
 
+void Grid::setOccupied(bool a)
+{
+    isOccupied = a;
+}
+
+bool Grid::getOccupied()
+{
+    return isOccupied;
+}
+
+void Grid::setChess(ChessPiece* c)
+{
+    currChess = c;
+}
+
+ChessPiece* Grid::getChess()
+{
+    return currChess;
+}
+
+void Grid::clearChess()
+{
+    currChess = nullptr;
+}
+
 void Grid::mousePressEvent(QMouseEvent* event)
 {
     if (event->button() == Qt::LeftButton) {
-        emit sendAction(-1, xCoord, yCoord);
+        emit sendAction(-1, -1, xCoord, yCoord);
     }
 }

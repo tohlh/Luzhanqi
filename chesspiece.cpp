@@ -165,7 +165,7 @@ void ChessPiece::mousePressEvent(QMouseEvent* event)
         if (!isFlipped) {
             flipChess();
         } else {
-            emit sendAction(ID, xCoord, yCoord);
+            emit sendAction(ID, chessColor, xCoord, yCoord);
         }
     } else {
         ChessPiece::mousePressEvent(event);
