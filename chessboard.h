@@ -5,7 +5,6 @@
 #include <QGridLayout>
 #include "chessgrid.h"
 #include "chesspiece.h"
-#include "chessrules.h"
 
 namespace Ui {
 class Chessboard;
@@ -19,7 +18,6 @@ public:
     explicit Chessboard(QWidget *parent = nullptr);
     ~Chessboard();
     ChessGrid *chessgrid;
-    void arrangeChess();
 
 public slots:
     void setBlankChessboard();

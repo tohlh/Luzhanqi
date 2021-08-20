@@ -15,12 +15,14 @@ public:
     ChessPiece(QWidget *parent = nullptr);
     ~ChessPiece();
 
-    void setChess(int color, chessPieceTypedef face);
+    void setChess(int color, chessPieceTypedef type);
     void setID(int i);
     int getID();
     void setCoord(int x, int y);
     int getXCoord();
     int getYCoord();
+    int getChessColor();
+    chessPieceTypedef getChessType();
 
     void selectChess();
     void deselectChess();

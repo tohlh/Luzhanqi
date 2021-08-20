@@ -5,8 +5,9 @@
 #include <QRandomGenerator>
 #include <QDateTime>
 #include "chesspiece.h"
-#include "chessrules.h"
 #include "grid.h"
+#include "validator.h"
+#include "chessrules.h"
 
 struct actionStruct {
     int id; // -1 for grids as they do not have ID, -2 for null
@@ -56,9 +57,8 @@ private:
     QList <int> yCoord = {0, 8, 60, 112, 164, 216, 268, 438, 490, 542, 594, 646, 698};
     actionStruct currAction = {-2, -2, -2};
 
-    ChessPiece *chesspiece = new ChessPiece();
-    Grid *grid = new Grid();
     Ui::ChessGrid *ui;
+    Validator *validate;
 };
 
 #endif // CHESSGRID_H
