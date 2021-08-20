@@ -31,5 +31,9 @@
         <file>棋盘.png</file>
         <file>空棋盘.png</file>
         <file>连长_蓝.png</file>
+        <file>bg_light_chess_green.png</file>
+        <file>bg_light_chess_orange.png</file>
+        <file>bg_light_chess_red.png</file>
+        <file>bg_light_chess_yellow.png</file>
     </qresource>
 </RCC>

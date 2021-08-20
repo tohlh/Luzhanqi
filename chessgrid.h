@@ -10,7 +10,6 @@
 
 struct actionStruct {
     int id; // -1 for grids as they do not have ID, -2 for null
-    int color;
     int xCoord;
     int yCoord;
 };
@@ -26,14 +25,18 @@ class ChessGrid : public QWidget
 public:
     explicit ChessGrid(QWidget *parent = nullptr);
     ~ChessGrid();
-    void moveChess(int id, int color, int x, int y);
-    void removeChess(int id, int color);
+    void moveChess(int id, int x, int y);
+    void removeChess(int id);
 
 private slots:
-    void appendAction(int id, int color, int xCoord, int yCoord);
+    void appendAction(int id, int xCoord, int yCoord);
 
 private:
     void arrangeChess(QList <ChessPiece*> chesspieces);
+    chessPieceTypedef getChessTypeFromID(int ID);
+
+    void selectChess(int id);
+    void deselectChess(int id);
 
     Grid* getGrid(int x, int y);
     bool isGridOccupied(int x, int y);
@@ -42,12 +45,7 @@ private:
     void clearGridChess(int x, int y);
     ChessPiece* getGridChess(int x, int y);
 
-    chessPieceTypedef getChessTypeFromID(int ID);
-    actionStruct currAction = {-2, -2, -2, -2};
-
-    ChessPiece *chesspiece = new ChessPiece();
-    Grid *grid = new Grid();
-    Ui::ChessGrid *ui;
+    ChessPiece* getChessByID(int id);
 
     QList < QList <Grid*> > grids;
     QList <ChessPiece*> chesspieces;
@@ -56,6 +54,11 @@ private:
     QList <ChessPiece*> redChess;
     QList <int> xCoord = {0, 8, 108, 208, 308, 408};
     QList <int> yCoord = {0, 8, 60, 112, 164, 216, 268, 438, 490, 542, 594, 646, 698};
+    actionStruct currAction = {-2, -2, -2};
+
+    ChessPiece *chesspiece = new ChessPiece();
+    Grid *grid = new Grid();
+    Ui::ChessGrid *ui;
 };
 
 #endif // CHESSGRID_H

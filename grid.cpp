@@ -49,6 +49,6 @@ void Grid::clearChess()
 void Grid::mousePressEvent(QMouseEvent* event)
 {
     if (event->button() == Qt::LeftButton) {
-        emit sendAction(-1, -1, xCoord, yCoord);
+        emit sendAction(-1, xCoord, yCoord);
     }
 }

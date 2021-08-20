@@ -152,6 +152,19 @@ int ChessPiece::getYCoord()
     return yCoord;
 }
 
+void ChessPiece::selectChess()
+{
+    QPixmap currFace = realFace;
+    QPixmap selBorder(":/images/bg_light_chess_green.png");
+    QPainter paint(&currFace);
+    paint.drawPixmap(0, 0, 360, 185, selBorder);
+    this->setPixmap(currFace);
+}
+
+void ChessPiece::deselectChess()
+{
+    this->setPixmap(realFace);
+}
 
 void ChessPiece::flipChess()
 {
@@ -165,7 +178,7 @@ void ChessPiece::mousePressEvent(QMouseEvent* event)
         if (!isFlipped) {
             flipChess();
         } else {
-            emit sendAction(ID, chessColor, xCoord, yCoord);
+            emit sendAction(ID, xCoord, yCoord);
         }
     } else {
         ChessPiece::mousePressEvent(event);

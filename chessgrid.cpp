@@ -104,12 +104,12 @@ ChessGrid::ChessGrid(QWidget *parent) :
     arrangeChess(chesspieces);
 
     for (int i = 0; i < chesspieces.size(); i ++) {
-        QObject::connect(chesspieces[i], SIGNAL(sendAction(int, int, int, int)), this, SLOT(appendAction(int, int, int, int)));
+        QObject::connect(chesspieces[i], SIGNAL(sendAction(int, int, int)), this, SLOT(appendAction(int, int, int)));
     }
 
     for (int i = 0; i < grids.size(); i++) {
         for (int j = 0; j < grids[i].size(); j++) {
-            QObject::connect(grids[i][j], SIGNAL(sendAction(int, int, int, int)), this, SLOT(appendAction(int, int, int, int)));
+            QObject::connect(grids[i][j], SIGNAL(sendAction(int, int, int)), this, SLOT(appendAction(int, int, int)));
         }
     }
 
@@ -148,57 +148,57 @@ void ChessGrid::arrangeChess(QList <ChessPiece*> chesspieces)
     }
 }
 
-void ChessGrid::appendAction(int id, int color, int xCoord, int yCoord)
+void ChessGrid::appendAction(int id, int xCoord, int yCoord)
 {
     actionStruct newAction;
     newAction.id = id;
-    newAction.color = color;
     newAction.xCoord = xCoord;
     newAction.yCoord = yCoord;
 
-    //qInfo() << "id = " << newAction.id << ", color = " << newAction.color << ", xCoord = " << newAction.xCoord << ", yCoord = " << newAction.yCoord;
     if (currAction.id != -2) { // not null action
         if (newAction.id == -1 && currAction.id > 0) { // move chess to grid
-            moveChess(currAction.id, currAction.color, newAction.xCoord, newAction.yCoord);
-            currAction = {-2, -2, -2, -2};
-        } else if (newAction.id == currAction.id) { // cancel selection
-            currAction = {-2, -2, -2, -2};
-        } else if (newAction.id > 0 && currAction.id > 0) {
+            moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+        } else if ( (newAction.id > 0 && currAction.id > 0) && (newAction.id != currAction.id) ) {
             // todo: if newAction can be destroyed by currAction, remove newAction and move currAction
             // else if newAction cannot be destroy by currAction, then currAction = newAction
-            removeChess(newAction.id, newAction.color);
-            moveChess(currAction.id, currAction.color, newAction.xCoord, newAction.yCoord);
-            currAction = {-2, -2, -2, -2};
+            removeChess(newAction.id);
+            moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
         }
     } else { // no prior action registered
         if (newAction.id != -1) { // only register chess actions
             currAction = newAction;
+            selectChess(newAction.id);
+            return;
         }
     }
+
+    deselectChess(currAction.id);
+    currAction = {-2, -2, -2};
 }
 
 /*
  * x, y, grid coordinate
  * move chess with id to grid at (x, y)
  */
-void ChessGrid::moveChess(int id, int color, int x, int y)
+void ChessGrid::selectChess(int id)
 {
-    ChessPiece* toMove = nullptr;
-    if (color == 0) {
-        for (int i = 0; i < blueChess.size(); i++) {
-            if (blueChess[i]->getID() == id) {
-                toMove = blueChess[i];
-                break;
-            }
-        }
-    } else {
-        for (int i = 0; i < redChess.size(); i++) {
-            if (redChess[i]->getID() == id) {
-                toMove = redChess[i];
-                break;
-            }
-        }
+    ChessPiece* toSelect = getChessByID(id);
+    if (toSelect) {
+        toSelect->selectChess();
     }
+}
+
+void ChessGrid::deselectChess(int id)
+{
+    ChessPiece* toDeselect = getChessByID(id);
+    if (toDeselect) {
+        toDeselect->deselectChess();
+    }
+}
+
+void ChessGrid::moveChess(int id, int x, int y)
+{
+    ChessPiece* toMove = getChessByID(id);
     if (toMove) {
         setGridOccupied(toMove->getXCoord(), toMove->getYCoord(), false);
         setGridOccupied(x, y, true);
@@ -209,26 +209,9 @@ void ChessGrid::moveChess(int id, int color, int x, int y)
     }
 }
 
-void ChessGrid::removeChess(int id, int color)
+void ChessGrid::removeChess(int id)
 {
-    ChessPiece* toRemove = nullptr;
-    if (color == 0) {
-        for (int i = 0; i < blueChess.size(); i++) {
-            if (blueChess[i]->getID() == id) {
-                toRemove = blueChess[i];
-                blueChess.remove(i);
-                break;
-            }
-        }
-    } else {
-        for (int i = 0; i < redChess.size(); i++) {
-            if (redChess[i]->getID() == id) {
-                toRemove = redChess[i];
-                redChess.remove(i);
-                break;
-            }
-        }
-    }
+    ChessPiece* toRemove = getChessByID(id);
     if (toRemove) {
         setGridOccupied(toRemove->getXCoord(), toRemove->getYCoord(), false);
         clearGridChess(toRemove->getXCoord(), toRemove->getYCoord());
@@ -259,6 +242,24 @@ void ChessGrid::setGridChess(int x, int y, ChessPiece* chess)
 ChessPiece* ChessGrid::getGridChess(int x, int y)
 {
     return grids[y - 1][x - 1]->getChess();
+}
+
+ChessPiece* ChessGrid::getChessByID(int id)
+{
+    ChessPiece* ret = nullptr;
+    for (int i = 0; i < blueChess.size(); i++) {
+        if (blueChess[i]->getID() == id) {
+            ret = blueChess[i];
+            break;
+        }
+    }
+    for (int i = 0; i < redChess.size(); i++) {
+        if (redChess[i]->getID() == id) {
+            ret = redChess[i];
+            break;
+        }
+    }
+    return ret;
 }
 
 void ChessGrid::clearGridChess(int x, int y)

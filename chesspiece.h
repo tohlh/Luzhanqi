@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QLabel>
 #include <QMouseEvent>
+#include <QPainter>
 #include "chessrules.h"
 
 class ChessPiece : public QLabel
@@ -13,16 +14,19 @@ class ChessPiece : public QLabel
 public:
     ChessPiece(QWidget *parent = nullptr);
     ~ChessPiece();
-    void setChess(int color, chessPieceTypedef face);
 
+    void setChess(int color, chessPieceTypedef face);
     void setID(int i);
     int getID();
     void setCoord(int x, int y);
     int getXCoord();
     int getYCoord();
 
+    void selectChess();
+    void deselectChess();
+
 signals:
-    void sendAction(int id, int color, int xCoord, int yCoord);
+    void sendAction(int id, int xCoord, int yCoord);
 
 protected:
     void mousePressEvent(QMouseEvent* event);
