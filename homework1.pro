@@ -16,6 +16,7 @@ SOURCES += \
     grid.cpp \
     main.cpp \
     mainwindow.cpp \
+    validator.cpp
 
 HEADERS += \
     chessboard.h \
@@ -25,6 +26,7 @@ HEADERS += \
     enddialog.h \
     grid.h \
     mainwindow.h \
+    validator.h
 
 FORMS += \
     chessboard.ui \

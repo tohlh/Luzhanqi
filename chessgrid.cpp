@@ -113,6 +113,8 @@ ChessGrid::ChessGrid(QWidget *parent) :
         }
     }
 
+    validate = new Validator(grids);
+
 }
 
 ChessGrid::~ChessGrid()
@@ -157,7 +159,10 @@ void ChessGrid::appendAction(int id, int xCoord, int yCoord)
 
     if (currAction.id != -2) { // not null action
         if (newAction.id == -1 && currAction.id > 0) { // move chess to grid
-            moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+            bool condition = validate->checkMove(getChessByID(currAction.id), newAction.xCoord, newAction.yCoord);
+            if (condition) {
+                moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+            }
         } else if ( (newAction.id > 0 && currAction.id > 0) && (newAction.id != currAction.id) ) {
             // todo: if newAction can be destroyed by currAction, remove newAction and move currAction
             // else if newAction cannot be destroy by currAction, then currAction = newAction
@@ -167,7 +172,7 @@ void ChessGrid::appendAction(int id, int xCoord, int yCoord)
     } else { // no prior action registered
         if (newAction.id != -1) { // only register chess actions
             currAction = newAction;
-            selectChess(newAction.id);
+            selectChess(currAction.id);
             return;
         }
     }
@@ -212,6 +217,20 @@ void ChessGrid::moveChess(int id, int x, int y)
 void ChessGrid::removeChess(int id)
 {
     ChessPiece* toRemove = getChessByID(id);
+    for (int i = 0; i < blueChess.size(); i++) {
+        if (blueChess[i]->getID() == id) {
+            toRemove = blueChess[i];
+            blueChess.remove(i);
+            break;
+        }
+    }
+    for (int i = 0; i < redChess.size(); i++) {
+        if (redChess[i]->getID() == id) {
+            toRemove = redChess[i];
+            redChess.remove(i);
+            break;
+        }
+    }
     if (toRemove) {
         setGridOccupied(toRemove->getXCoord(), toRemove->getYCoord(), false);
         clearGridChess(toRemove->getXCoord(), toRemove->getYCoord());
@@ -348,4 +367,5 @@ chessPieceTypedef ChessGrid::getChessTypeFromID(int ID) {
             return junqi;
         }
     }
+    return junqi;
 }

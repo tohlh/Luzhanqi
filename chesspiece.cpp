@@ -14,6 +14,7 @@ ChessPiece::~ChessPiece()
 void ChessPiece::setChess(int color, chessPieceTypedef face)
 {
     chessColor = color;
+    chessType = face;
     switch(face) {
         case junqi:
         {
@@ -150,6 +151,16 @@ int ChessPiece::getXCoord()
 int ChessPiece::getYCoord()
 {
     return yCoord;
+}
+
+int ChessPiece::getChessColor()
+{
+    return chessColor;
+}
+
+chessPieceTypedef ChessPiece::getChessType()
+{
+    return chessType;
 }
 
 void ChessPiece::selectChess()
