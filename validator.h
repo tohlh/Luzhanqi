@@ -14,6 +14,7 @@ public:
 
 private:
     QList < QList <Grid* > > grids;
+    QList < QPair <int, int> > junying;
 };
 
 #endif // VALIDATOR_H
