@@ -164,16 +164,28 @@ void ChessGrid::appendAction(int id, int xCoord, int yCoord)
                 moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
             }
         } else if ( (newAction.id > 0 && currAction.id > 0) && (newAction.id != currAction.id) ) {
-            // todo: if newAction can be destroyed by currAction, remove newAction and move currAction
-            // else if newAction cannot be destroy by currAction, then currAction = newAction
-            removeChess(newAction.id);
-            moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+            // 0 chess1 destroyed, 1 chess2 destroyed, -1 both destroyed, -2 invalid move
+            int stat = validate->checkAttack(getChessByID(currAction.id), getChessByID(newAction.id));
+            if (stat == 0) {
+                removeChess(currAction.id);
+            } else if (stat == 1) {
+                removeChess(newAction.id);
+                moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+            } else if (stat == -1) {
+                removeChess(newAction.id);
+                removeChess(currAction.id);
+            }
         }
     } else { // no prior action registered
-        if (newAction.id != -1) { // only register chess actions
-            currAction = newAction;
-            selectChess(currAction.id);
-            return;
+        if (newAction.id != -1) {
+            if (!getChessByID(newAction.id)->getChessFlipped()) { // not flipped
+                getChessByID(newAction.id)->flipChess();
+                return;
+            } else { // flipped, hence select
+                currAction = newAction;
+                selectChess(currAction.id);
+                return;
+            }
         }
     }
 
@@ -216,7 +228,7 @@ void ChessGrid::moveChess(int id, int x, int y)
 
 void ChessGrid::removeChess(int id)
 {
-    ChessPiece* toRemove = getChessByID(id);
+    ChessPiece* toRemove = nullptr;
     for (int i = 0; i < blueChess.size(); i++) {
         if (blueChess[i]->getID() == id) {
             toRemove = blueChess[i];

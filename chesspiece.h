@@ -26,6 +26,8 @@ public:
 
     void selectChess();
     void deselectChess();
+    bool getChessFlipped();
+    void flipChess();
 
 signals:
     void sendAction(int id, int xCoord, int yCoord);
@@ -34,7 +36,6 @@ protected:
     void mousePressEvent(QMouseEvent* event);
 
 private:
-    void flipChess();
     int ID, xCoord, yCoord;
     bool isFlipped = false;
     int chessColor; //1 red, 2 blue

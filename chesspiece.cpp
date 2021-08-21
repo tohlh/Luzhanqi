@@ -177,6 +177,11 @@ void ChessPiece::deselectChess()
     this->setPixmap(realFace);
 }
 
+bool ChessPiece::getChessFlipped()
+{
+    return isFlipped;
+}
+
 void ChessPiece::flipChess()
 {
     isFlipped = true;
@@ -186,11 +191,7 @@ void ChessPiece::flipChess()
 void ChessPiece::mousePressEvent(QMouseEvent* event)
 {
     if (event->button() == Qt::LeftButton) {
-        if (!isFlipped) {
-            flipChess();
-        } else {
-            emit sendAction(ID, xCoord, yCoord);
-        }
+        emit sendAction(ID, xCoord, yCoord);
     } else {
         ChessPiece::mousePressEvent(event);
     }
