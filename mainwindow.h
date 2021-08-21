@@ -20,6 +20,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+    Chessboard *chessboard = new Chessboard();
+
 signals:
     void gameStarted();
     void gameEnded();
@@ -35,6 +37,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QVBoxLayout *layout = new QVBoxLayout();
-    Chessboard *chessboard = new Chessboard();
+
 };
 #endif // MAINWINDOW_H
