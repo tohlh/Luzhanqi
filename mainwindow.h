@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QVBoxLayout>
+#include <QTimer>
 #include "chessboard.h"
 #include "chessgrid.h"
 #include "chesspiece.h"
@@ -21,6 +22,7 @@ public:
     ~MainWindow();
 
     Chessboard *chessboard = new Chessboard();
+    QTimer *timer = new QTimer();
 
 signals:
     void gameStarted();
@@ -29,6 +31,7 @@ signals:
 public slots:
     void initGame();
     void endGame();
+    void updateTimerText();
 
 private slots:
     void on_actionStart_triggered();
@@ -37,6 +40,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QVBoxLayout *layout = new QVBoxLayout();
+    int currTimer = 0;
 
 };
 #endif // MAINWINDOW_H

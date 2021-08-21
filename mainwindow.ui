@@ -43,14 +43,14 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
-      <widget class="QLabel" name="label">
+      <widget class="QLabel" name="turnLabel">
        <property name="text">
         <string>Some text here</string>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLCDNumber" name="lcdNumber"/>
+      <widget class="QLCDNumber" name="timer"/>
      </item>
     </layout>
    </widget>
