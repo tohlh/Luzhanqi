@@ -114,7 +114,6 @@ ChessGrid::ChessGrid(QWidget *parent) :
     }
 
     validate = new Validator(grids);
-
 }
 
 ChessGrid::~ChessGrid()

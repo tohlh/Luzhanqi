@@ -7,6 +7,9 @@
 #include "chessboard.h"
 #include "chessgrid.h"
 #include "chesspiece.h"
+#include "server.h"
+#include "client.h"
+#include "global.h"
 #include "enddialog.h"
 
 QT_BEGIN_NAMESPACE
@@ -20,9 +23,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
     Chessboard *chessboard = new Chessboard();
-    QTimer *timer = new QTimer();
 
 signals:
     void gameStarted();
@@ -36,11 +37,13 @@ public slots:
 private slots:
     void on_actionStart_triggered();
     void on_actionSurrender_triggered();
+    void on_actionCreate_a_connection_triggered();
+    void on_actionConnect_to_server_triggered();
 
 private:
     Ui::MainWindow *ui;
     QVBoxLayout *layout = new QVBoxLayout();
-    int currTimer = 0;
+
 
 };
 #endif // MAINWINDOW_H

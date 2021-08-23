@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -12,10 +12,14 @@ SOURCES += \
     chessboard.cpp \
     chessgrid.cpp \
     chesspiece.cpp \
+    client.cpp \
     enddialog.cpp \
+    global.cpp \
     grid.cpp \
     main.cpp \
     mainwindow.cpp \
+    player.cpp \
+    server.cpp \
     validator.cpp
 
 HEADERS += \
@@ -23,17 +27,22 @@ HEADERS += \
     chessgrid.h \
     chesspiece.h \
     chessrules.h \
+    client.h \
     enddialog.h \
+    global.h \
     grid.h \
     mainwindow.h \
+    player.h \
+    server.h \
     validator.h
 
 FORMS += \
     chessboard.ui \
     chessgrid.ui \
-    chesspiece.ui \
+    client.ui \
     enddialog.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    server.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

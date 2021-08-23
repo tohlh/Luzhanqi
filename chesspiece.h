@@ -5,6 +5,7 @@
 #include <QLabel>
 #include <QMouseEvent>
 #include <QPainter>
+#include "global.h"
 #include "chessrules.h"
 
 class ChessPiece : public QLabel

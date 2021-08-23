@@ -7,6 +7,7 @@
 #include "chesspiece.h"
 #include "grid.h"
 #include "validator.h"
+#include "global.h"
 #include "chessrules.h"
 
 struct actionStruct {
