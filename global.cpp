@@ -11,6 +11,5 @@ namespace timer {
 };
 
 namespace player {
-    Player *player = nullptr;
     bool isTurn = false;
 };
