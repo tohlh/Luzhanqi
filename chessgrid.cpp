@@ -222,7 +222,12 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) // 0 for 
                 return;
             } else { // flipped, hence select
                 currAction = newAction;
-                selectChess(currAction.id);
+                if (type == 0) {
+                    selectChess(currAction.id, true);
+                } else if (type == 1) {
+                    selectChess(currAction.id, false);
+                }
+
                 return;
             }
         }
@@ -245,11 +250,11 @@ void ChessGrid::appendActionNetwork(int from, int id, int xCoord, int yCoord)
  * x, y, grid coordinate
  * move chess with id to grid at (x, y)
  */
-void ChessGrid::selectChess(int id)
+void ChessGrid::selectChess(int id, bool yourself)
 {
     ChessPiece* toSelect = getChessByID(id);
     if (toSelect) {
-        toSelect->selectChess();
+        toSelect->selectChess(yourself);
     }
 }
 

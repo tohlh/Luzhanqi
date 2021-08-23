@@ -163,10 +163,15 @@ chessPieceTypedef ChessPiece::getChessType()
     return chessType;
 }
 
-void ChessPiece::selectChess()
+void ChessPiece::selectChess(bool yourself)
 {
     QPixmap currFace = realFace;
-    QPixmap selBorder(":/images/bg_light_chess_green.png");
+    QPixmap selBorder;
+    if (yourself) {
+        selBorder = QPixmap(":/images/bg_light_chess_green.png");
+    } else {
+        selBorder = QPixmap(":/images/bg_light_chess_red.png");
+    }
     QPainter paint(&currFace);
     paint.drawPixmap(0, 0, 360, 185, selBorder);
     this->setPixmap(currFace);

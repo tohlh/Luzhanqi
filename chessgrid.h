@@ -41,7 +41,7 @@ private:
     void sendChessSeq();
     chessPieceTypedef getChessTypeFromID(int ID);
 
-    void selectChess(int id);
+    void selectChess(int id, bool yourself);
     void deselectChess(int id);
 
     Grid* getGrid(int x, int y);

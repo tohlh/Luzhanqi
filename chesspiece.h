@@ -25,7 +25,7 @@ public:
     int getChessColor();
     chessPieceTypedef getChessType();
 
-    void selectChess();
+    void selectChess(bool yourself);
     void deselectChess();
     bool getChessFlipped();
     void flipChess();
