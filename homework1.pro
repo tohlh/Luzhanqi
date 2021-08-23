@@ -19,7 +19,6 @@ SOURCES += \
     grid.cpp \
     main.cpp \
     mainwindow.cpp \
-    player.cpp \
     server.cpp \
     validator.cpp
 
@@ -34,7 +33,6 @@ HEADERS += \
     global.h \
     grid.h \
     mainwindow.h \
-    player.h \
     server.h \
     validator.h
 

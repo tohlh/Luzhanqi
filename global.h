@@ -3,7 +3,6 @@
 #include <QTimer>
 #include "server.h"
 #include "client.h"
-#include "player.h"
 
 namespace network {
     extern Server* server;
@@ -16,7 +15,6 @@ namespace timer {
 };
 
 namespace player {
-    extern Player* player;
     extern bool isTurn;
 };
 
