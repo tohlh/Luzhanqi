@@ -13,6 +13,7 @@ public:
 
 signals:
     void sendActionNetwork(int from, int id, int xCoord, int yCoord);
+    void myTurn();
 };
 
 #endif // COMMAND_H

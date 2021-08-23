@@ -6,6 +6,7 @@
 #include <QWidget>
 #include <QMouseEvent>
 #include "chesspiece.h"
+#include "global.h"
 
 class Grid : public QLabel
 {

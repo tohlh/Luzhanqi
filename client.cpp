@@ -42,6 +42,8 @@ void Client::receiveData()
     QDataStream ds(&block, QIODevice::ReadOnly);
     ds >> currentData;
 
+    qInfo() << currentData;
+
     if (currentData.mid(0, 4) != "!sta") {
         command->parse(currentData);
     } else {

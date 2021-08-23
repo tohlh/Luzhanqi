@@ -26,8 +26,19 @@ void MainWindow::initGame()
 {
     ui->actionStart->setEnabled(false);
     ui->actionSurrender->setEnabled(true);
-    timer::timer->start(1000);
+
     chessboard->setNewChessboard();
+    if (network::server) {
+        myTurn();
+        QObject::connect(network::server->command, SIGNAL(myTurn()), this, SLOT(myTurn()));
+    }
+
+    if (network::client) {
+        theirTurn();
+        QObject::connect(network::client->command, SIGNAL(myTurn()), this, SLOT(myTurn()));
+    }
+
+    QObject::connect(chessboard->chessgrid, SIGNAL(theirTurn()), this, SLOT(theirTurn()));
 }
 
 void MainWindow::endGame()
@@ -51,6 +62,22 @@ void MainWindow::updateTimerText()
         // todo: others turn
         timer::currTimer = 0;
     }
+    ui->timer->display(timer::currTimer);
+}
+
+void MainWindow::myTurn()
+{
+    player::isTurn = true;
+    ui->turnLabel->setText("Your turn");
+    timer::timer->start(1000);
+}
+
+void MainWindow::theirTurn()
+{
+    player::isTurn = false;
+    ui->turnLabel->setText("Opponent's turn");
+    timer::timer->stop();
+    timer::currTimer = 0;
     ui->timer->display(timer::currTimer);
 }
 

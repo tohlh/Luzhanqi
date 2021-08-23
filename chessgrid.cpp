@@ -104,8 +104,8 @@ ChessGrid::ChessGrid(QWidget *parent) :
     if (network::server) {
         QObject::connect(network::server->command, SIGNAL(sendActionNetwork(int, int, int, int)), this, SLOT(appendActionNetwork(int, int, int, int)));
         shuffleChess();
-        network::server->sendChessSeq(chessSeq);
         arrangeChess(chesspieces);
+        network::server->sendChessSeq(chessSeq);
     }
 
     if (network::client) {
@@ -185,54 +185,65 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) // 0 for 
     QString cmd;
 
     //mouse click -> send
-
-    if (type == 0 && network::server) {
+    if (type == 0 && player::isTurn && network::server) {
         cmd = QString("!act 0 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
-        network::server->sendData(cmd);
     }
 
-    if (type == 0 && network::client) {
+    if (type == 0 && player::isTurn && network::client) {
         cmd = QString("!act 1 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
-        network::client->sendData(cmd);
     }
 
     if (currAction.id != -2) { // not null action
         if (newAction.id == -1 && currAction.id > 0) { // move chess to grid
             bool condition = validate->checkMove(getChessByID(currAction.id), newAction.xCoord, newAction.yCoord);
-            if (condition) {
+            if (condition && (player::isTurn || type == 1)) {
                 moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
             }
+
         } else if ( (newAction.id > 0 && currAction.id > 0) && (newAction.id != currAction.id) ) {
             // 0 chess1 destroyed, 1 chess2 destroyed, -1 both destroyed, -2 invalid move
             int stat = validate->checkAttack(getChessByID(currAction.id), getChessByID(newAction.id));
-            if (stat == 0) {
+            if (stat == 0 && (player::isTurn || type == 1)) {
                 removeChess(currAction.id);
-            } else if (stat == 1) {
+            } else if (stat == 1 && (player::isTurn || type == 1)) {
                 removeChess(newAction.id);
                 moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
-            } else if (stat == -1) {
+            } else if (stat == -1 && (player::isTurn || type == 1)) {
                 removeChess(newAction.id);
                 removeChess(currAction.id);
             }
         }
-    } else { // no prior action registered
+        if (type == 0 && player::isTurn) {
+            commitCommand(cmd + " !end");
+            passOver();
+        }
+
+    } else { // no prior action registered, selecting or flipping
         if (newAction.id != -1) {
             if (!getChessByID(newAction.id)->getChessFlipped()) { // not flipped
-                getChessByID(newAction.id)->flipChess();
-                return;
+                if (player::isTurn || type == 1) {
+                    ChessPiece* toFlip = getChessByID(newAction.id);
+                    toFlip->flipChess();
+                    if (type == 0 && player::isTurn) {
+                        commitCommand(cmd + " !end");
+                        passOver();
+                    }
+                    return;
+                }
             } else { // flipped, hence select
                 currAction = newAction;
-                if (type == 0) {
+                if (type == 0 && player::isTurn && (player::color == -1 || player::color == getChessByID(currAction.id)->getChessColor())) {
                     selectChess(currAction.id, true);
                 } else if (type == 1) {
                     selectChess(currAction.id, false);
                 }
-
+                commitCommand(cmd);
                 return;
             }
         }
     }
 
+    commitCommand(cmd);
     deselectChess(currAction.id);
     currAction = {-2, -2, -2};
 }
@@ -244,6 +255,22 @@ void ChessGrid::appendActionNetwork(int from, int id, int xCoord, int yCoord)
     } else if (from == 1 && network::server) {
         appendAction(1, id, xCoord, yCoord);
     }
+}
+
+void ChessGrid::commitCommand(QString cmd)
+{
+    if (network::server) {
+        network::server->sendData(cmd);
+    }
+
+    if (network::client) {
+        network::client->sendData(cmd);
+    }
+}
+
+void ChessGrid::passOver()
+{
+    emit theirTurn();
 }
 
 /*

@@ -29,11 +29,14 @@ signals:
     void gameStarted();
     void gameEnded();
 
+
 public slots:
     void enablePlay();
     void initGame();
     void endGame();
     void updateTimerText();
+    void myTurn();
+    void theirTurn();
 
 private slots:
     void on_actionStart_triggered();

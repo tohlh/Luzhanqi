@@ -29,11 +29,16 @@ public:
     ~ChessGrid();
     void moveChess(int id, int x, int y);
     void removeChess(int id);
+    void commitCommand(QString cmd);
+    void passOver();
 
 private slots:
     void appendAction(int type, int id, int xCoord, int yCoord);
     void appendActionNetwork(int from, int id, int xCoord, int yCoord);
     void receivedSeq(QList<int> seq);
+
+signals:
+    void theirTurn();
 
 private:
     void shuffleChess();

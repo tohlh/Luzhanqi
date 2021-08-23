@@ -12,4 +12,7 @@ namespace timer {
 
 namespace player {
     bool isTurn = false;
+    int steps = 0;
+    int color = -1;
+    int lastColor = -1;
 };
