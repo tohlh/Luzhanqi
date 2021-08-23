@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QTcpSocket>
 #include <QDataStream>
+#include "command.h"
 
 namespace Ui {
 class Client;
@@ -16,9 +17,14 @@ class Client : public QWidget
 public:
     explicit Client(QWidget *parent = nullptr);
     ~Client();
-
     bool connectToServer();
-    void sendData();
+    void sendData(QString data);
+    void receiveSeq(QString data);
+    Command* command;
+
+signals:
+    void receivedSeq(QList <int> seq);
+    void startGame();
 
 public slots:
     void receiveData();
@@ -33,6 +39,7 @@ private:
     quint16 serverPort;
     QTcpSocket *readWriteSocket;
     QString currentData;
+
 };
 
 #endif // CLIENT_H

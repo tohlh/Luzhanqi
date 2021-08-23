@@ -23,7 +23,7 @@ public:
     ChessPiece* getChess();
 
 signals:
-    void sendAction(int id, int xCoord, int yCoord);
+    void sendAction(int type, int id, int xCoord, int yCoord);
 
 protected:
     void mousePressEvent(QMouseEvent* event);

@@ -30,6 +30,7 @@ signals:
     void gameEnded();
 
 public slots:
+    void enablePlay();
     void initGame();
     void endGame();
     void updateTimerText();

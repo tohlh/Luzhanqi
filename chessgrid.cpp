@@ -101,15 +101,25 @@ ChessGrid::ChessGrid(QWidget *parent) :
         setGridChess(x, y, chesspieces[i]);
     }
 
-    arrangeChess(chesspieces);
+    if (network::server) {
+        QObject::connect(network::server->command, SIGNAL(sendActionNetwork(int, int, int, int)), this, SLOT(appendActionNetwork(int, int, int, int)));
+        shuffleChess();
+        network::server->sendChessSeq(chessSeq);
+        arrangeChess(chesspieces);
+    }
+
+    if (network::client) {
+        QObject::connect(network::client->command, SIGNAL(sendActionNetwork(int, int, int, int)), this, SLOT(appendActionNetwork(int, int, int, int)));
+        QObject::connect(network::client, SIGNAL(receivedSeq(QList <int>)), this, SLOT(receivedSeq(QList <int>)));
+    }
 
     for (int i = 0; i < chesspieces.size(); i ++) {
-        QObject::connect(chesspieces[i], SIGNAL(sendAction(int, int, int)), this, SLOT(appendAction(int, int, int)));
+        QObject::connect(chesspieces[i], SIGNAL(sendAction(int, int, int, int)), this, SLOT(appendAction(int, int, int, int)));
     }
 
     for (int i = 0; i < grids.size(); i++) {
         for (int j = 0; j < grids[i].size(); j++) {
-            QObject::connect(grids[i][j], SIGNAL(sendAction(int, int, int)), this, SLOT(appendAction(int, int, int)));
+            QObject::connect(grids[i][j], SIGNAL(sendAction(int, int, int, int)), this, SLOT(appendAction(int, int, int, int)));
         }
     }
 
@@ -121,7 +131,7 @@ ChessGrid::~ChessGrid()
     delete ui;
 }
 
-void ChessGrid::arrangeChess(QList <ChessPiece*> chesspieces)
+void ChessGrid::shuffleChess()
 {
     QList <int> chessID;
     for (int i = 0; i < 50; i++) {
@@ -132,6 +142,15 @@ void ChessGrid::arrangeChess(QList <ChessPiece*> chesspieces)
     for (int i = 0; i < chesspieces.size(); i++) {
         int index = rand.generate() % chessID.size();
         int currChessID = chessID[index];
+        chessSeq.append(currChessID);
+        chessID.remove(index);
+    }
+}
+
+void ChessGrid::arrangeChess(QList <ChessPiece*> chesspieces)
+{
+    for (int i = 0; i < chesspieces.size(); i++) {
+        int currChessID = chessSeq[i];
         int color = currChessID > 25 ? 0 : 1;
         chessPieceTypedef type = getChessTypeFromID(currChessID % 25);
         chesspieces[i]->setChess(color, type);
@@ -141,7 +160,6 @@ void ChessGrid::arrangeChess(QList <ChessPiece*> chesspieces)
         } else if (color == 1) {
             redChess.append(chesspieces[i]);
         }
-        chessID.remove(index);
     }
 
     while (chesspieces.size()) {
@@ -149,12 +167,34 @@ void ChessGrid::arrangeChess(QList <ChessPiece*> chesspieces)
     }
 }
 
-void ChessGrid::appendAction(int id, int xCoord, int yCoord)
+void ChessGrid::receivedSeq(QList<int> seq)
+{
+    for (int i = 0; i < seq.size(); i++) {
+        chessSeq.append(seq[i]);
+    }
+    arrangeChess(chesspieces);
+}
+
+void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) // 0 for mouse-click event, 1 for network event
 {
     actionStruct newAction;
     newAction.id = id;
     newAction.xCoord = xCoord;
     newAction.yCoord = yCoord;
+
+    QString cmd;
+
+    //mouse click -> send
+
+    if (type == 0 && network::server) {
+        cmd = QString("!act 0 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
+        network::server->sendData(cmd);
+    }
+
+    if (type == 0 && network::client) {
+        cmd = QString("!act 1 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
+        network::client->sendData(cmd);
+    }
 
     if (currAction.id != -2) { // not null action
         if (newAction.id == -1 && currAction.id > 0) { // move chess to grid
@@ -190,6 +230,15 @@ void ChessGrid::appendAction(int id, int xCoord, int yCoord)
 
     deselectChess(currAction.id);
     currAction = {-2, -2, -2};
+}
+
+void ChessGrid::appendActionNetwork(int from, int id, int xCoord, int yCoord)
+{ // from: 0 is host, 1 is client
+    if (from == 0 && network::client) {
+        appendAction(1, id, xCoord, yCoord);
+    } else if (from == 1 && network::server) {
+        appendAction(1, id, xCoord, yCoord);
+    }
 }
 
 /*

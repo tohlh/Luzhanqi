@@ -18,8 +18,13 @@ MainWindow::~MainWindow()
 }
 
 // Public slots
+void MainWindow::enablePlay() {
+    ui->actionStart->setEnabled(true);
+}
+
 void MainWindow::initGame()
 {
+    ui->actionStart->setEnabled(false);
     ui->actionSurrender->setEnabled(true);
     timer::timer->start(1000);
     chessboard->setNewChessboard();
@@ -70,6 +75,7 @@ void MainWindow::on_actionCreate_a_connection_triggered()
     if (!network::server) {
         network::server = new Server();
         network::server->initServer();
+        QObject::connect(network::server, SIGNAL(enablePlay()), this, SLOT(enablePlay()));
     }
     network::server->show();
 }
@@ -83,6 +89,7 @@ void MainWindow::on_actionConnect_to_server_triggered()
 
     if (!network::client) {
         network::client = new Client();
+        QObject::connect(network::client, SIGNAL(startGame()), this, SLOT(initGame()));
     }
     network::client->show();
 }

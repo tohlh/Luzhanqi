@@ -31,10 +31,14 @@ public:
     void removeChess(int id);
 
 private slots:
-    void appendAction(int id, int xCoord, int yCoord);
+    void appendAction(int type, int id, int xCoord, int yCoord);
+    void appendActionNetwork(int from, int id, int xCoord, int yCoord);
+    void receivedSeq(QList<int> seq);
 
 private:
+    void shuffleChess();
     void arrangeChess(QList <ChessPiece*> chesspieces);
+    void sendChessSeq();
     chessPieceTypedef getChessTypeFromID(int ID);
 
     void selectChess(int id);
@@ -49,6 +53,7 @@ private:
 
     ChessPiece* getChessByID(int id);
 
+    QList <int> chessSeq;
     QList < QList <Grid*> > grids;
     QList <ChessPiece*> chesspieces;
 

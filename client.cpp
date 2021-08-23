@@ -6,6 +6,7 @@ Client::Client(QWidget *parent) :
     ui(new Ui::Client)
 {
     ui->setupUi(this);
+    command = new Command();
 }
 
 Client::~Client()
@@ -37,13 +38,34 @@ void Client::on_connectButton_clicked()
 
 void Client::receiveData()
 {
-    currentData = this->readWriteSocket->readAll();
-    ui->notifcationLabel->setText(currentData);
+    QByteArray block = readWriteSocket->readAll();
+    QDataStream ds(&block, QIODevice::ReadOnly);
+    ds >> currentData;
+
+    if (currentData.mid(0, 4) != "!sta") {
+        command->parse(currentData);
+    } else {
+        receiveSeq(currentData);
+    }
 }
 
-void Client::sendData()
+void Client::receiveSeq(QString data)
 {
-    readWriteSocket->write("HELLO GUYS");
+    QList <QString> rawSeq = data.split(QRegularExpression("\\s+"));
+    QList <int> seq;
+
+    for (int i = 1; i < rawSeq.size(); i++) seq.append(rawSeq[i].toInt());
+
+    emit startGame();
+    emit receivedSeq(seq);
+}
+
+void Client::sendData(QString data)
+{
+    QByteArray block;
+    QDataStream ds(&block, QIODevice::WriteOnly);
+    ds << data;
+    readWriteSocket->write(block);
 }
 
 void Client::on_doneButton_clicked()

@@ -191,7 +191,7 @@ void ChessPiece::flipChess()
 void ChessPiece::mousePressEvent(QMouseEvent* event)
 {
     if (event->button() == Qt::LeftButton) {
-        emit sendAction(ID, xCoord, yCoord);
+        emit sendAction(0, ID, xCoord, yCoord);
     } else {
         ChessPiece::mousePressEvent(event);
     }

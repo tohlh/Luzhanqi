@@ -6,6 +6,7 @@ Server::Server(QWidget *parent) :
     ui(new Ui::Server)
 {
     ui->setupUi(this);
+    command = new Command();
     listenSocket =  new QTcpServer(this);
     QObject::connect(listenSocket, SIGNAL(newConnection()), this, SLOT(acceptConnection()));
 }
@@ -40,6 +41,7 @@ void Server::initServer()
 
 void Server::acceptConnection()
 {
+    emit enablePlay();
     ui->notificationLabel->setText("Client connected!");
     ui->doneButton->setEnabled(true);
     readWriteSocket = listenSocket->nextPendingConnection();
@@ -48,16 +50,34 @@ void Server::acceptConnection()
 
 void Server::receiveData()
 {
-    currentData = readWriteSocket->readAll();
+    QByteArray block = readWriteSocket->readAll();
+    QDataStream ds(&block, QIODevice::ReadOnly);
+    ds >> currentData;
+    command->parse(currentData);
 }
 
-void Server::sendData()
+void Server::sendData(QString data)
 {
-    readWriteSocket->write("HELLO FROM SERVER");
+    QByteArray block;
+    QDataStream ds(&block, QIODevice::WriteOnly);
+    ds << data;
+    readWriteSocket->write(block);
+}
+
+void Server::sendChessSeq(QList<int> &seq)
+{
+    QString cmd = "!sta ";
+
+    for (int i = 0; i < seq.size(); i++) {
+        cmd += QString("%1").arg(seq[i]);
+        cmd += " ";
+    }
+
+    qInfo() << cmd;
+    sendData(cmd);
 }
 
 void Server::on_doneButton_clicked()
 {
     this->hide();
 }
-

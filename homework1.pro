@@ -13,6 +13,7 @@ SOURCES += \
     chessgrid.cpp \
     chesspiece.cpp \
     client.cpp \
+    command.cpp \
     enddialog.cpp \
     global.cpp \
     grid.cpp \
@@ -28,6 +29,7 @@ HEADERS += \
     chesspiece.h \
     chessrules.h \
     client.h \
+    command.h \
     enddialog.h \
     global.h \
     grid.h \
