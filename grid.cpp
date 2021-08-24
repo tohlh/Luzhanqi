@@ -50,5 +50,7 @@ void Grid::mousePressEvent(QMouseEvent* event)
 {
     if (event->button() == Qt::LeftButton) {
         emit sendAction(0, -1, xCoord, yCoord);
+    } else {
+        Grid::mousePressEvent(event);
     }
 }

@@ -31,6 +31,7 @@ public:
     void removeChess(int id);
     void commitCommand(QString cmd);
     void passOver();
+    void clearAction();
 
 private slots:
     void appendAction(int type, int id, int xCoord, int yCoord);

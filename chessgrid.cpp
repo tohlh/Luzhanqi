@@ -174,7 +174,7 @@ void ChessGrid::receivedSeq(QList<int> seq)
     }
     arrangeChess(chesspieces);
 }
-
+/*
 void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) // 0 for mouse-click event, 1 for network event
 {
     actionStruct newAction;
@@ -243,13 +243,122 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) // 0 for 
         }
     }
 
-    commitCommand(cmd);
     deselectChess(currAction.id);
     currAction = {-2, -2, -2};
+}*/
+
+void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:mouse, 1:network
+{
+    actionStruct newAction;
+    newAction.id = id;
+    newAction.xCoord = xCoord;
+    newAction.yCoord = yCoord;
+    QString cmd;
+
+    if (network::server) {
+        cmd = QString("!act 0 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
+    }
+
+    if (network::client) {
+        cmd = QString("!act 1 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
+    }
+
+    qInfo() << "type = " << type << ", command = " << cmd << ", player::isTurn = " << player::isTurn;
+
+    if (type == 0 && player::isTurn) {
+        bool end = false; // whether to end the command
+        if (currAction.id != -2) {
+            if (newAction.id == currAction.id) { //deselect chess
+                deselectChess(newAction.id);
+                clearAction();
+            } else if (newAction.id == -1) { //move chess
+                bool condition = validate->checkMove(getChessByID(currAction.id), newAction.xCoord, newAction.yCoord);
+                if (condition) {
+                    moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+                    deselectChess(currAction.id);
+                    clearAction();
+                    end = true;
+                }
+            } else if (newAction.id > 0) { //attack chess
+                // 0 chess1 destroyed, 1 chess2 destroyed, -1 both destroyed, -2 invalid move
+                int condition = validate->checkAttack(getChessByID(currAction.id), getChessByID(newAction.id));
+                if (condition ==  0) {
+                    removeChess(currAction.id);
+                    deselectChess(currAction.id);
+                    clearAction();
+                    end = true;
+                } else if (condition == 1) {
+                    removeChess(newAction.id);
+                    moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+                    deselectChess(currAction.id);
+                    clearAction();
+                    end = true;
+                } else if (condition == -1) {
+                    removeChess(newAction.id);
+                    removeChess(currAction.id);
+                    clearAction();
+                    end = true;
+                }
+            }
+        } else {
+            if (newAction.id > 0 && !getChessByID(newAction.id)->getChessFlipped()) {
+                getChessByID(newAction.id)->flipChess();
+                clearAction();
+                end = true;
+            } else if (newAction.id > 0 && getChessByID(newAction.id)->getChessFlipped()) {
+                selectChess(newAction.id, true);
+                currAction = newAction;
+            }
+        }
+        if (end) {
+            cmd += " !end";
+            passOver();
+        }
+        commitCommand(cmd);
+    } else if (type == 1) {
+        if (currAction.id != -2) {
+            if (newAction.id == currAction.id) { //deselect chess
+                deselectChess(newAction.id);
+                clearAction();
+            } else if (newAction.id == -1) { //move chess
+                bool condition = validate->checkMove(getChessByID(currAction.id), newAction.xCoord, newAction.yCoord);
+                if (condition) {
+                    moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+                    deselectChess(currAction.id);
+                    clearAction();
+                }
+            } else if (newAction.id > 0) { //attack chess
+                // 0 chess1 destroyed, 1 chess2 destroyed, -1 both destroyed, -2 invalid move
+                int condition = validate->checkAttack(getChessByID(currAction.id), getChessByID(newAction.id));
+                if (condition ==  0) {
+                    removeChess(currAction.id);
+                    deselectChess(currAction.id);
+                    clearAction();
+                } else if (condition == 1) {
+                    removeChess(newAction.id);
+                    moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+                    deselectChess(currAction.id);
+                    clearAction();
+                } else if (condition == -1) {
+                    removeChess(newAction.id);
+                    removeChess(currAction.id);
+                    clearAction();
+                }
+            }
+        } else {
+            if (newAction.id > 0 && !getChessByID(newAction.id)->getChessFlipped()) {
+                getChessByID(newAction.id)->flipChess();
+                clearAction();
+            } else if (newAction.id > 0 && getChessByID(newAction.id)->getChessFlipped()) {
+                selectChess(newAction.id, false);
+                currAction = newAction;
+            }
+        }
+    }
 }
 
-void ChessGrid::appendActionNetwork(int from, int id, int xCoord, int yCoord)
-{ // from: 0 is host, 1 is client
+void ChessGrid::appendActionNetwork(int from, int id, int xCoord, int yCoord) // from 0:host, 1:client
+{
     if (from == 0 && network::client) {
         appendAction(1, id, xCoord, yCoord);
     } else if (from == 1 && network::server) {
@@ -271,6 +380,11 @@ void ChessGrid::commitCommand(QString cmd)
 void ChessGrid::passOver()
 {
     emit theirTurn();
+}
+
+void ChessGrid::clearAction()
+{
+    currAction = {-2, -2, -2};
 }
 
 /*
