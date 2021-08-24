@@ -58,8 +58,11 @@ void MainWindow::endGame(int winColor)
 
     ui->colorLabel->setText("");
     ui->turnLabel->setText("");
-    ui->actionStart->setEnabled(true);
     ui->actionSurrender->setEnabled(false);
+
+    if (network::server) {
+        ui->actionStart->setEnabled(true);
+    }
 
     timer::currTimer = 20;
     timer::timer->stop();
