@@ -17,23 +17,17 @@
         <file>paizhang_blue.png</file>
         <file>lvzhang_red.png</file>
         <file>lvzhang_blue.png</file>
-        <file>棋盘2.png</file>
-        <file>棋盘背景.jpg</file>
         <file>zhadan_red.png</file>
         <file>zhadan_blue.png</file>
-        <file>空行营.png</file>
         <file>yingzhang_red.png</file>
         <file>yingzhang_blue.png</file>
         <file>lianzhang_red.png</file>
-        <file>占位符（空兵站）.png</file>
         <file>dilei_red.png</file>
         <file>shizhang_blue.png</file>
         <file>chessboard.png</file>
         <file>emptyChessboard.png</file>
         <file>lianzhang_blue.png</file>
         <file>bg_light_chess_green.png</file>
-        <file>bg_light_chess_orange.png</file>
         <file>bg_light_chess_red.png</file>
-        <file>bg_light_chess_yellow.png</file>
     </qresource>
 </RCC>
