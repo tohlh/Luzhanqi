@@ -29,7 +29,6 @@ signals:
     void gameStarted();
     void gameEnded();
 
-
 public slots:
     void enablePlay();
     void initGame();

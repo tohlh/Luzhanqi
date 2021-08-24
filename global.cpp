@@ -7,7 +7,7 @@ namespace network {
 
 namespace timer {
     QTimer *timer = new QTimer();
-    int currTimer = 0;
+    int currTimer = 20;
 };
 
 namespace player {

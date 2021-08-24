@@ -50,18 +50,24 @@ void MainWindow::endGame()
     ui->actionSurrender->setEnabled(false);
     chessboard->setBlankChessboard();
 
-    timer::currTimer = 0;
+    timer::currTimer = 20;
     timer::timer->stop();
     ui->timer->display(0);
 }
 
 void MainWindow::updateTimerText()
 {
-    if (timer::currTimer < 20) {
-        timer::currTimer++;
+    if (timer::currTimer > 0) {
+        timer::currTimer--;
     } else {
-        // todo: others turn
-        timer::currTimer = 0;
+        theirTurn();
+        if (network::server) {
+            network::server->sendData("!act -2 -2 -2 -2 !end");
+        }
+
+        if (network::client) {
+            network::client->sendData("!act -2 -2 -2 -2 !end");
+        }
     }
     ui->timer->display(timer::currTimer);
 }
@@ -87,7 +93,7 @@ void MainWindow::theirTurn()
     player::isTurn = false;
     ui->turnLabel->setText("Opponent's turn");
     timer::timer->stop();
-    timer::currTimer = 0;
+    timer::currTimer = 20;
     ui->timer->display(timer::currTimer);
 }
 
