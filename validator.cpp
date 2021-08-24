@@ -10,11 +10,9 @@ bool Validator::checkLose(QList <ChessPiece*> chesspieces)
 {
     for (int i = 0; i < chesspieces.size(); i++) { // not flipped means still got chance
         if (!chesspieces[i]->getChessFlipped()) {
-            qInfo() << "case 1";
             return false;
         }
         if (chesspieces[i]->getChessType() != dilei && chesspieces[i]->getChessType() != junqi) {
-            qInfo() << "case 2";
             return false;
         }
     }
@@ -26,7 +24,6 @@ bool Validator::checkLose(QList <ChessPiece*> chesspieces)
                     ChessPiece* chesspiece2 = grids[j][k]->getChess();
                     int stat = checkAttack(chesspieces[i], chesspiece2);
                     if (stat != -2) {
-                        qInfo() << "case 3";
                         return false;
                     }
                 } else {
@@ -34,7 +31,6 @@ bool Validator::checkLose(QList <ChessPiece*> chesspieces)
                     int y = grids[j][k]->getYCoord();
                     bool stat = checkMove(chesspieces[i], x, y);
                     if (stat) {
-                        qInfo() << "case 4";
                         return false;
                     }
                 }
