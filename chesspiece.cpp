@@ -18,108 +18,108 @@ void ChessPiece::setChess(int color, chessPieceTypedef face)
         case junqi:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/军旗_红.png");
+                realFace = QPixmap(":/images/junqi_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/军旗_蓝.png");
+                realFace = QPixmap(":/images/junqi_blue.png");
             }
             break;
         }
         case gongbing:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/工兵_红.png");
+                realFace = QPixmap(":/images/gongbing_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/工兵_蓝.png");
+                realFace = QPixmap(":/images/gongbing_blue.png");
             }
             break;
         }
         case paizhang:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/排长_红.png");
+                realFace = QPixmap(":/images/paizhang_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/排长_蓝.png");
+                realFace = QPixmap(":/images/paizhang_blue.png");
             }
             break;
         }
         case lianzhang:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/连长_红.png");
+                realFace = QPixmap(":/images/lianzhang_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/连长_蓝.png");
+                realFace = QPixmap(":/images/lianzhang_blue.png");
             }
             break;
         }
         case yingzhang:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/营长_红.png");
+                realFace = QPixmap(":/images/yingzhang_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/营长_蓝.png");
+                realFace = QPixmap(":/images/yingzhang_blue.png");
             }
             break;
         }
         case tuanzhang:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/团长_红.png");
+                realFace = QPixmap(":/images/tuanzhang_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/团长_蓝.png");
+                realFace = QPixmap(":/images/tuanzhang_blue.png");
             }
             break;
         }
         case lvzhang:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/旅长_红.png");
+                realFace = QPixmap(":/images/lvzhang_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/旅长_蓝.png");
+                realFace = QPixmap(":/images/lvzhang_blue.png");
             }
             break;
         }
         case shizhang:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/师长_红.png");
+                realFace = QPixmap(":/images/shizhang_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/师长_蓝.png");
+                realFace = QPixmap(":/images/shizhang_blue.png");
             }
             break;
         }
         case junzhang:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/军长_红.png");
+                realFace = QPixmap(":/images/junzhang_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/军长_蓝.png");
+                realFace = QPixmap(":/images/junzhang_blue.png");
             }
             break;
         }
         case siling:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/司令_红.png");
+                realFace = QPixmap(":/images/siling_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/司令_蓝.png");
+                realFace = QPixmap(":/images/siling_blue.png");
             }
             break;
         }
         case dilei:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/地雷_红.png");
+                realFace = QPixmap(":/images/dilei_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/地雷_蓝.png");
+                realFace = QPixmap(":/images/dilei_blue.png");
             }
             break;
         }
         case zhadan:
         {
             if (chessColor == 1) {
-                realFace = QPixmap(":/images/炸弹_红.png");
+                realFace = QPixmap(":/images/zhadan_red.png");
             } else if (chessColor == 0) {
-                realFace = QPixmap(":/images/炸弹_蓝.png");
+                realFace = QPixmap(":/images/zhadan_blue.png");
             }
             break;
         }

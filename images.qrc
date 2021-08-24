@@ -1,36 +1,36 @@
 <RCC>
     <qresource prefix="/images">
-        <file>军旗_红.png</file>
-        <file>军旗_蓝.png</file>
-        <file>军长_红.png</file>
-        <file>军长_蓝.png</file>
-        <file>占位符（未翻的棋子）.png</file>
-        <file>司令_红.png</file>
-        <file>司令_蓝.png</file>
-        <file>团长_红.png</file>
-        <file>团长_蓝.png</file>
-        <file>地雷_蓝.png</file>
-        <file>工兵_红.png</file>
-        <file>工兵_蓝.png</file>
-        <file>师长_红.png</file>
-        <file>排长_红.png</file>
-        <file>排长_蓝.png</file>
-        <file>旅长_红.png</file>
-        <file>旅长_蓝.png</file>
+        <file>junqi_red.png</file>
+        <file>junqi_blue.png</file>
+        <file>junzhang_red.png</file>
+        <file>junzhang_blue.png</file>
+        <file>unflipped.png</file>
+        <file>siling_red.png</file>
+        <file>siling_blue.png</file>
+        <file>tuanzhang_red.png</file>
+        <file>tuanzhang_blue.png</file>
+        <file>dilei_blue.png</file>
+        <file>gongbing_red.png</file>
+        <file>gongbing_blue.png</file>
+        <file>shizhang_red.png</file>
+        <file>paizhang_red.png</file>
+        <file>paizhang_blue.png</file>
+        <file>lvzhang_red.png</file>
+        <file>lvzhang_blue.png</file>
         <file>棋盘2.png</file>
         <file>棋盘背景.jpg</file>
-        <file>炸弹_红.png</file>
-        <file>炸弹_蓝.png</file>
+        <file>zhadan_red.png</file>
+        <file>zhadan_blue.png</file>
         <file>空行营.png</file>
-        <file>营长_红.png</file>
-        <file>营长_蓝.png</file>
-        <file>连长_红.png</file>
+        <file>yingzhang_red.png</file>
+        <file>yingzhang_blue.png</file>
+        <file>lianzhang_red.png</file>
         <file>占位符（空兵站）.png</file>
-        <file>地雷_红.png</file>
-        <file>师长_蓝.png</file>
-        <file>棋盘.png</file>
-        <file>空棋盘.png</file>
-        <file>连长_蓝.png</file>
+        <file>dilei_red.png</file>
+        <file>shizhang_blue.png</file>
+        <file>chessboard.png</file>
+        <file>emptyChessboard.png</file>
+        <file>lianzhang_blue.png</file>
         <file>bg_light_chess_green.png</file>
         <file>bg_light_chess_orange.png</file>
         <file>bg_light_chess_red.png</file>

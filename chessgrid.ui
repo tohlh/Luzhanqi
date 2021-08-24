@@ -1016,7 +1016,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1056,7 +1056,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1096,7 +1096,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1136,7 +1136,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1176,7 +1176,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1216,7 +1216,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1256,7 +1256,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1296,7 +1296,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1336,7 +1336,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1376,7 +1376,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1416,7 +1416,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1456,7 +1456,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1496,7 +1496,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1536,7 +1536,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1576,7 +1576,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1616,7 +1616,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1656,7 +1656,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1696,7 +1696,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1736,7 +1736,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1776,7 +1776,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1816,7 +1816,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1856,7 +1856,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1896,7 +1896,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1936,7 +1936,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -1976,7 +1976,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2016,7 +2016,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2056,7 +2056,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2096,7 +2096,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2136,7 +2136,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2176,7 +2176,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2216,7 +2216,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2256,7 +2256,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2296,7 +2296,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2336,7 +2336,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2376,7 +2376,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2416,7 +2416,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2456,7 +2456,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2496,7 +2496,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2536,7 +2536,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2576,7 +2576,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2616,7 +2616,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2656,7 +2656,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2696,7 +2696,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2736,7 +2736,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2776,7 +2776,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2816,7 +2816,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2856,7 +2856,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2896,7 +2896,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2936,7 +2936,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -2976,7 +2976,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="images.qrc">:/images/占位符（未翻的棋子）.png</pixmap>
+    <pixmap resource="images.qrc">:/images/unflipped.png</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>

@@ -16,7 +16,7 @@ Chessboard::~Chessboard()
 
 void Chessboard::setNewChessboard()
 {
-    QPixmap chessboard(":/images/空棋盘.png");
+    QPixmap chessboard(":/images/emptyChessboard.png");
     ui->chessboardBackground->setPixmap(chessboard);
 
     if (chessgrid != nullptr) {
