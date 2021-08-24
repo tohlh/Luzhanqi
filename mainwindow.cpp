@@ -46,7 +46,9 @@ void MainWindow::initGame()
 
 void MainWindow::endGame(int winColor)
 {
-    EndDialog *dialog = new EndDialog();
+    if (dialog == nullptr) {
+        dialog = new EndDialog();
+    }
     if (winColor == 0) {
         dialog->setWinColor("Blue");
     } else if (winColor == 1) {
@@ -70,7 +72,7 @@ void MainWindow::updateTimerText()
         timer::currTimer--;
     } else {
         timer::overTimeCnt++;
-        if (timer::overTimeCnt > 3) {
+        if (timer::overTimeCnt > 2) {
             QString cmd = QString("!end %1").arg(player::theirColor);
             if (network::server) {
                 network::server->sendData(cmd);
@@ -78,7 +80,7 @@ void MainWindow::updateTimerText()
             if (network::client) {
                 network::client->sendData(cmd);
             }
-            emit endGame(player::theirColor);
+            endGame(player::theirColor);
         }
 
         theirTurn();

@@ -15,6 +15,6 @@ EndDialog::~EndDialog()
 
 void EndDialog::setWinColor(QString color)
 {
-    winColor = color;
-    ui->winTeam->setText(winColor + tr(" wins!"));
+    QString text = QString("%1 wins!").arg(color);
+    ui->winTeam->setText(text);
 }
