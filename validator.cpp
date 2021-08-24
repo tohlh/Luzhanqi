@@ -6,6 +6,45 @@ Validator::Validator(QList < QList <Grid*> > &g)
     junying = {{2, 3}, {4, 3}, {3, 4}, {2, 5}, {4, 5}, {2, 8}, {4, 8}, {3, 9}, {2, 10}, {4, 10}};
 }
 
+bool Validator::checkLose(QList <ChessPiece*> chesspieces)
+{
+    for (int i = 0; i < chesspieces.size(); i++) { // not flipped means still got chance
+        if (!chesspieces[i]->getChessFlipped()) {
+            qInfo() << "case 1";
+            return false;
+        }
+        if (chesspieces[i]->getChessType() != dilei && chesspieces[i]->getChessType() != junqi) {
+            qInfo() << "case 2";
+            return false;
+        }
+    }
+
+    for (int i = 0; i < chesspieces.size(); i++) {
+        for (int j = 0; j < grids.size(); j++) {
+            for (int k = 0; k < grids[j].size(); k++) {
+                if (grids[j][k]->getOccupied()) {
+                    ChessPiece* chesspiece2 = grids[j][k]->getChess();
+                    int stat = checkAttack(chesspieces[i], chesspiece2);
+                    if (stat != -2) {
+                        qInfo() << "case 3";
+                        return false;
+                    }
+                } else {
+                    int x = grids[j][k]->getXCoord();
+                    int y = grids[j][k]->getYCoord();
+                    bool stat = checkMove(chesspieces[i], x, y);
+                    if (stat) {
+                        qInfo() << "case 4";
+                        return false;
+                    }
+                }
+            }
+        }
+    }
+
+    return true;
+}
+
 bool Validator::checkMove(ChessPiece* chess, int x, int y)
 {
     if (chess == nullptr) return false; //failsafe
@@ -69,12 +108,26 @@ int Validator::checkAttack(ChessPiece* chess1, ChessPiece* chess2) // 0 chess1 d
         return -2;
     }
 
-    if (chess1->getChessType() == zhadan || chess2->getChessType() == zhadan) {
+    if (chess1->getChessType() == zhadan) {
         return -1;
     }
 
     if (chess1->getChessType() == gongbing && chess2->getChessType() == dilei) {
         return 1;
+    }
+
+    if (chess2->getChessType() == junqi) {
+        for (int i = 0; i < grids.size(); i++) {
+            for (int j = 0; j < grids[i].size(); j++) {
+                if (grids[i][j]->getOccupied()) {
+                    ChessPiece* currChess = grids[i][j]->getChess();
+                    if (currChess->getChessColor() == chess2->getChessColor() && currChess->getChessType() == dilei) {
+                        return -2;
+                    }
+                }
+            }
+        }
+        return 2;
     }
 
     if (chess1->getChessType() >= gongbing && chess1->getChessType() <= siling &&

@@ -12,6 +12,7 @@ namespace network {
 namespace timer {
     extern QTimer* timer;
     extern int currTimer;
+    extern int overTimeCnt;
 };
 
 namespace player {

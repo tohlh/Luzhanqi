@@ -32,6 +32,7 @@ public:
     void commitCommand(QString cmd);
     void passOver();
     void clearAction();
+    void checkLose();
 
 private slots:
     void appendAction(int type, int id, int xCoord, int yCoord);
@@ -41,6 +42,7 @@ private slots:
 signals:
     void theirTurn();
     void colorDecided();
+    void endGame(int winColor);
 
 private:
     void shuffleChess();
@@ -57,7 +59,6 @@ private:
     void setGridChess(int x, int y, ChessPiece* chess);
     void clearGridChess(int x, int y);
     ChessPiece* getGridChess(int x, int y);
-
     ChessPiece* getChessByID(int id);
 
     QList <int> chessSeq;

@@ -32,45 +32,28 @@ ChessGrid::ChessGrid(QWidget *parent) :
                     ui->chess_41, ui->chess_42, ui->chess_43, ui->chess_44, ui->chess_45,
                     ui->chess_46, ui->chess_47, ui->chess_48, ui->chess_49, ui->chess_50 };
 
-    for (int i = 0; i < grids.size(); i++) {
-        for (int j = 0; j < grids[0].size(); j++) {
-            grids[i][j]->setCoord(j + 1, i + 1);
-            if ( (i == 2 && j == 1) || (i == 2 && j == 3) || (i == 3 || j == 2) || (i == 4 && j == 1) || (i == 4 && j == 3) ||
-                 (i == 7 && j == 1) || (i == 7 && j == 3) || (i == 8 || j == 2) || (i == 9 && j == 1) || (i == 9 && j == 3) )
-            {
-                grids[i][j]->setOccupied(false);
-            } else {
-                grids[i][j]->setOccupied(true);
-            }
-        }
-    }
-
     for (int i = 0; i < 10; i++) {
         int x = (i % 5) + 1;
         int y = (i / 5) + 1;
         chesspieces[i]->setCoord(x, y);
-        grids[y - 1][x - 1]->setChess(chesspieces[i]);
     }
 
     for (int i = 20; i < 25; i++) {
         int x = (i % 5) + 1;
         int y = 6;
         chesspieces[i]->setCoord(x, y);
-        grids[y - 1][x - 1]->setChess(chesspieces[i]);
     }
 
     for (int i = 25; i < 30; i++) {
         int x = (i % 5) + 1;
         int y = 7;
         chesspieces[i]->setCoord(x, y);
-        grids[y - 1][x - 1]->setChess(chesspieces[i]);
     }
 
     for (int i = 40; i < 50; i++) {
         int x = (i % 5) + 1;
         int y = (i / 5) + 3;
         chesspieces[i]->setCoord(x, y);
-        grids[y - 1][x - 1]->setChess(chesspieces[i]);
     }
 
     chesspieces[10]->setCoord(1, 3);
@@ -95,10 +78,17 @@ ChessGrid::ChessGrid(QWidget *parent) :
     chesspieces[38]->setCoord(3, 10);
     chesspieces[39]->setCoord(5, 10);
 
+    for (int i = 0; i < grids.size(); i++) {
+        for (int j = 0; j < grids[i].size(); j++) {
+            grids[i][j]->setCoord(j + 1, i + 1);
+        }
+    }
+
     for (int i = 0; i < chesspieces.size(); i++) {
         int x = chesspieces[i]->getXCoord();
         int y = chesspieces[i]->getYCoord();
         setGridChess(x, y, chesspieces[i]);
+        setGridOccupied(x, y, true);
     }
 
     if (network::server) {
@@ -174,78 +164,6 @@ void ChessGrid::receivedSeq(QList<int> seq)
     }
     arrangeChess(chesspieces);
 }
-/*
-void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) // 0 for mouse-click event, 1 for network event
-{
-    actionStruct newAction;
-    newAction.id = id;
-    newAction.xCoord = xCoord;
-    newAction.yCoord = yCoord;
-
-    QString cmd;
-
-    //mouse click -> send
-    if (type == 0 && player::isTurn && network::server) {
-        cmd = QString("!act 0 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
-    }
-
-    if (type == 0 && player::isTurn && network::client) {
-        cmd = QString("!act 1 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
-    }
-
-    if (currAction.id != -2) { // not null action
-        if (newAction.id == -1 && currAction.id > 0) { // move chess to grid
-            bool condition = validate->checkMove(getChessByID(currAction.id), newAction.xCoord, newAction.yCoord);
-            if (condition && (player::isTurn || type == 1)) {
-                moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
-            }
-
-        } else if ( (newAction.id > 0 && currAction.id > 0) && (newAction.id != currAction.id) ) {
-            // 0 chess1 destroyed, 1 chess2 destroyed, -1 both destroyed, -2 invalid move
-            int stat = validate->checkAttack(getChessByID(currAction.id), getChessByID(newAction.id));
-            if (stat == 0 && (player::isTurn || type == 1)) {
-                removeChess(currAction.id);
-            } else if (stat == 1 && (player::isTurn || type == 1)) {
-                removeChess(newAction.id);
-                moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
-            } else if (stat == -1 && (player::isTurn || type == 1)) {
-                removeChess(newAction.id);
-                removeChess(currAction.id);
-            }
-        }
-        if (type == 0 && player::isTurn) {
-            commitCommand(cmd + " !end");
-            passOver();
-        }
-
-    } else { // no prior action registered, selecting or flipping
-        if (newAction.id != -1) {
-            if (!getChessByID(newAction.id)->getChessFlipped()) { // not flipped
-                if (player::isTurn || type == 1) {
-                    ChessPiece* toFlip = getChessByID(newAction.id);
-                    toFlip->flipChess();
-                    if (type == 0 && player::isTurn) {
-                        commitCommand(cmd + " !end");
-                        passOver();
-                    }
-                    return;
-                }
-            } else { // flipped, hence select
-                currAction = newAction;
-                if (type == 0 && player::isTurn && (player::color == -1 || player::color == getChessByID(currAction.id)->getChessColor())) {
-                    selectChess(currAction.id, true);
-                } else if (type == 1) {
-                    selectChess(currAction.id, false);
-                }
-                commitCommand(cmd);
-                return;
-            }
-        }
-    }
-
-    deselectChess(currAction.id);
-    currAction = {-2, -2, -2};
-}*/
 
 void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:mouse, 1:network
 {
@@ -263,10 +181,8 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
         cmd = QString("!act 1 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
     }
 
-    qInfo() << "type = " << type << ", command = " << cmd << ", player::isTurn = " << player::isTurn;
-
     if (type == 0 && player::isTurn) {
-        bool end = false; // whether to end the command
+        bool pas = false; // whether to end the command
         if (currAction.id != -2) {
             if (newAction.id == currAction.id) { //deselect chess
                 deselectChess(newAction.id);
@@ -277,7 +193,8 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
                     moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
                     deselectChess(currAction.id);
                     clearAction();
-                    end = true;
+                    pas = true;
+                    player::steps++;
                 }
             } else if (newAction.id > 0) { //attack chess
                 // 0 chess1 destroyed, 1 chess2 destroyed, -1 both destroyed, -2 invalid move
@@ -286,25 +203,35 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
                     removeChess(currAction.id);
                     deselectChess(currAction.id);
                     clearAction();
-                    end = true;
+                    pas = true;
+                    player::steps++;
                 } else if (condition == 1) {
                     removeChess(newAction.id);
                     moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
                     deselectChess(currAction.id);
                     clearAction();
-                    end = true;
+                    pas = true;
+                    player::steps++;
                 } else if (condition == -1) {
                     removeChess(newAction.id);
                     removeChess(currAction.id);
                     clearAction();
-                    end = true;
+                    pas = true;
+                    player::steps++;
+                }  else if (condition == 2) {
+                    removeChess(newAction.id);
+                    moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+                    int winColor = getChessByID(currAction.id)->getChessColor();
+                    commitCommand(cmd);
+                    emit endGame(winColor);
+                    return;
                 }
             }
         } else {
             if (newAction.id > 0 && !getChessByID(newAction.id)->getChessFlipped()) {
                 ChessPiece* toFlip = getChessByID(newAction.id);
                 toFlip->flipChess();
-
+                player::steps++;
                 if (player::myColor == -1) {
                     if (player::myLastColor == -1 || player::myLastColor != toFlip->getChessColor()) {
                         player::myLastColor = toFlip->getChessColor();
@@ -314,19 +241,19 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
                         emit colorDecided();
                     }
                 }
-
                 clearAction();
-                end = true;
+                pas = true;
             } else if (newAction.id > 0 && getChessByID(newAction.id)->getChessFlipped() && getChessByID(newAction.id)->getChessColor() == player::myColor) {
                 selectChess(newAction.id, true);
                 currAction = newAction;
             }
         }
-        if (end) {
-            cmd += " !end";
+        if (pas) {
+            cmd += " !pas";
             passOver();
         }
         commitCommand(cmd);
+        checkLose();
     } else if (type == 1) {
         if (currAction.id != -2) {
             if (newAction.id == currAction.id) { //deselect chess
@@ -338,6 +265,7 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
                     moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
                     deselectChess(currAction.id);
                     clearAction();
+                    player::steps++;
                 }
             } else if (newAction.id > 0) { //attack chess
                 // 0 chess1 destroyed, 1 chess2 destroyed, -1 both destroyed, -2 invalid move
@@ -346,22 +274,31 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
                     removeChess(currAction.id);
                     deselectChess(currAction.id);
                     clearAction();
+                    player::steps++;
                 } else if (condition == 1) {
                     removeChess(newAction.id);
                     moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
                     deselectChess(currAction.id);
                     clearAction();
+                    player::steps++;
                 } else if (condition == -1) {
                     removeChess(newAction.id);
                     removeChess(currAction.id);
                     clearAction();
+                    player::steps++;
+                } else if (condition == 2) {
+                    removeChess(newAction.id);
+                    moveChess(currAction.id, newAction.xCoord, newAction.yCoord);
+                    int winColor = getChessByID(currAction.id)->getChessColor();
+                    emit endGame(winColor);
+                    return;
                 }
             }
         } else {
             if (newAction.id > 0 && !getChessByID(newAction.id)->getChessFlipped()) {
                 ChessPiece* toFlip = getChessByID(newAction.id);
                 toFlip->flipChess();
-
+                player::steps++;
                 if (player::theirColor == -1) {
                     if (player::theirLastColor == -1 || player::theirLastColor != toFlip->getChessColor()) {
                         player::theirLastColor = toFlip->getChessColor();
@@ -371,13 +308,13 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
                         emit colorDecided();
                     }
                 }
-
                 clearAction();
             } else if (newAction.id > 0 && getChessByID(newAction.id)->getChessFlipped() && getChessByID(newAction.id)->getChessColor() == player::theirColor) {
                 selectChess(newAction.id, false);
                 currAction = newAction;
             }
         }
+        checkLose();
     }
 }
 
@@ -399,6 +336,15 @@ void ChessGrid::commitCommand(QString cmd)
     if (network::client) {
         network::client->sendData(cmd);
     }
+}
+
+void ChessGrid::checkLose()
+{
+    bool blueLost = validate->checkLose(blueChess);
+    bool redLost = validate->checkLose(redChess);
+
+    if (blueLost) emit endGame(1);
+    if (redLost) emit endGame(0);
 }
 
 void ChessGrid::passOver()

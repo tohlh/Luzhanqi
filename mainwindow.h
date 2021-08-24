@@ -27,12 +27,12 @@ public:
 
 signals:
     void gameStarted();
-    void gameEnded();
+    void gameEnded(int winColor);
 
 public slots:
     void enablePlay();
     void initGame();
-    void endGame();
+    void endGame(int winColor);
     void updateTimerText();
     void colorDecided();
     void myTurn();

@@ -14,24 +14,16 @@ Chessboard::~Chessboard()
     delete ui;
 }
 
-void Chessboard::setBlankChessboard()
-{
-    QPixmap chessboard(":/images/棋盘.png");
-    ui->chessboardBackground->setPixmap(chessboard);
-
-    if (chessgrid) {
-        layout->removeWidget(chessgrid);
-        delete (chessgrid);
-    }
-    this->setLayout(layout);
-}
-
 void Chessboard::setNewChessboard()
 {
     QPixmap chessboard(":/images/空棋盘.png");
     ui->chessboardBackground->setPixmap(chessboard);
 
-    chessgrid = new ChessGrid();
+    if (chessgrid != nullptr) {
+        delete chessgrid;
+    }
+
+    chessgrid = new ChessGrid(this);
     layout->addWidget(chessgrid, 0, 0);
     this->setLayout(layout);
 }

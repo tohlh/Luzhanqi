@@ -73,7 +73,6 @@ void Server::sendChessSeq(QList<int> &seq)
         cmd += " ";
     }
 
-    qInfo() << cmd;
     sendData(cmd);
 }
 

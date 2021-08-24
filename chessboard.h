@@ -18,11 +18,8 @@ class Chessboard : public QWidget
 public:
     explicit Chessboard(QWidget *parent = nullptr);
     ~Chessboard();
-
-    void setBlankChessboard();
     void setNewChessboard();
-
-    ChessGrid *chessgrid;
+    ChessGrid *chessgrid = nullptr;
 
 private:
     Ui::Chessboard *ui;

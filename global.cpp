@@ -8,6 +8,7 @@ namespace network {
 namespace timer {
     QTimer *timer = new QTimer();
     int currTimer = 20;
+    int overTimeCnt = 0;
 };
 
 namespace player {

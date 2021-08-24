@@ -2,7 +2,7 @@
 
 Grid::Grid(QWidget *parent) : QLabel(parent)
 {
-
+    isOccupied = false;
 }
 
 void Grid::setCoord(int x, int y)
