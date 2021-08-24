@@ -47,7 +47,7 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QVBoxLayout *layout = new QVBoxLayout();
-
+    EndDialog *dialog = nullptr;
 
 };
 #endif // MAINWINDOW_H

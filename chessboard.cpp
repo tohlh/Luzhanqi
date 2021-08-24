@@ -21,6 +21,10 @@ void Chessboard::setNewChessboard()
 
     if (chessgrid != nullptr) {
         delete chessgrid;
+        player::myColor = -1;
+        player::myLastColor = -1;
+        player::theirColor = -1;
+        player::theirLastColor = -1;
     }
 
     chessgrid = new ChessGrid(this);
