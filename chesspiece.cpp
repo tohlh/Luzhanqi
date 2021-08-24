@@ -1,5 +1,4 @@
 #include "chesspiece.h"
-#include "ui_chesspiece.h"
 
 ChessPiece::ChessPiece(QWidget *parent) : QLabel(parent)
 {
