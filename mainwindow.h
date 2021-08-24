@@ -35,6 +35,7 @@ public slots:
     void initGame();
     void endGame();
     void updateTimerText();
+    void colorDecided();
     void myTurn();
     void theirTurn();
 

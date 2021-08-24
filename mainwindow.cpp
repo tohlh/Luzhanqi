@@ -39,6 +39,7 @@ void MainWindow::initGame()
     }
 
     QObject::connect(chessboard->chessgrid, SIGNAL(theirTurn()), this, SLOT(theirTurn()));
+    QObject::connect(this->chessboard->chessgrid, SIGNAL(colorDecided()), this, SLOT(colorDecided()));
 }
 
 void MainWindow::endGame()
@@ -63,6 +64,15 @@ void MainWindow::updateTimerText()
         timer::currTimer = 0;
     }
     ui->timer->display(timer::currTimer);
+}
+
+void MainWindow::colorDecided()
+{
+    if (player::myColor == 0) {
+        ui->colorLabel->setText("Your color is blue");
+    } else if (player::myColor == 1) {
+        ui->colorLabel->setText("Your color is red");
+    }
 }
 
 void MainWindow::myTurn()

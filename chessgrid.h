@@ -40,6 +40,7 @@ private slots:
 
 signals:
     void theirTurn();
+    void colorDecided();
 
 private:
     void shuffleChess();

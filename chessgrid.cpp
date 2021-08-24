@@ -302,10 +302,22 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
             }
         } else {
             if (newAction.id > 0 && !getChessByID(newAction.id)->getChessFlipped()) {
-                getChessByID(newAction.id)->flipChess();
+                ChessPiece* toFlip = getChessByID(newAction.id);
+                toFlip->flipChess();
+
+                if (player::myColor == -1) {
+                    if (player::myLastColor == -1 || player::myLastColor != toFlip->getChessColor()) {
+                        player::myLastColor = toFlip->getChessColor();
+                    } else if (player::myLastColor == toFlip->getChessColor()) {
+                        player::myColor = toFlip->getChessColor();
+                        player::theirColor = !toFlip->getChessColor();
+                        emit colorDecided();
+                    }
+                }
+
                 clearAction();
                 end = true;
-            } else if (newAction.id > 0 && getChessByID(newAction.id)->getChessFlipped()) {
+            } else if (newAction.id > 0 && getChessByID(newAction.id)->getChessFlipped() && getChessByID(newAction.id)->getChessColor() == player::myColor) {
                 selectChess(newAction.id, true);
                 currAction = newAction;
             }
@@ -347,9 +359,21 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
             }
         } else {
             if (newAction.id > 0 && !getChessByID(newAction.id)->getChessFlipped()) {
-                getChessByID(newAction.id)->flipChess();
+                ChessPiece* toFlip = getChessByID(newAction.id);
+                toFlip->flipChess();
+
+                if (player::theirColor == -1) {
+                    if (player::theirLastColor == -1 || player::theirLastColor != toFlip->getChessColor()) {
+                        player::theirLastColor = toFlip->getChessColor();
+                    } else if (player::theirLastColor == toFlip->getChessColor()) {
+                        player::theirColor = toFlip->getChessColor();
+                        player::myColor = !toFlip->getChessColor();
+                        emit colorDecided();
+                    }
+                }
+
                 clearAction();
-            } else if (newAction.id > 0 && getChessByID(newAction.id)->getChessFlipped()) {
+            } else if (newAction.id > 0 && getChessByID(newAction.id)->getChessFlipped() && getChessByID(newAction.id)->getChessColor() == player::theirColor) {
                 selectChess(newAction.id, false);
                 currAction = newAction;
             }

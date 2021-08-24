@@ -17,8 +17,10 @@ namespace timer {
 namespace player {
     extern bool isTurn;
     extern int steps;
-    extern int color;
-    extern int lastColor;
+    extern int myColor;
+    extern int myLastColor;
+    extern int theirColor;
+    extern int theirLastColor;
 };
 
 #endif // GLOBAL_H
