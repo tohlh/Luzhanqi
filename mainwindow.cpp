@@ -151,6 +151,7 @@ void MainWindow::on_actionCreate_a_connection_triggered()
     if (network::client) {
         network::client->close();
         delete network::client;
+        network::client = nullptr;
     }
 
     if (!network::server) {
@@ -163,9 +164,11 @@ void MainWindow::on_actionCreate_a_connection_triggered()
 
 void MainWindow::on_actionConnect_to_server_triggered()
 {
+    ui->actionStart->setEnabled(false);
     if (network::server) {
         network::server->close();
         delete network::server;
+        network::server = nullptr;
     }
 
     if (!network::client) {
