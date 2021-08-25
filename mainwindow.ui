@@ -6,17 +6,145 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>550</width>
+    <height>850</height>
    </rect>
   </property>
-  <property name="windowTitle">
-   <string>MainWindow</string>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
-  <widget class="QMenuBar" name="menubar"/>
+  <property name="minimumSize">
+   <size>
+    <width>550</width>
+    <height>850</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>550</width>
+    <height>850</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Chess</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>551</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="turnLabel">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="colorLabel">
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QLCDNumber" name="timer"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>551</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="chessboardLayout"/>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>550</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConnect">
+    <property name="title">
+     <string>Connect</string>
+    </property>
+    <addaction name="actionCreate_a_connection"/>
+    <addaction name="actionConnect_to_server"/>
+   </widget>
+   <widget class="QMenu" name="menuPlay">
+    <property name="title">
+     <string>Play</string>
+    </property>
+    <addaction name="actionStart"/>
+    <addaction name="actionSurrender"/>
+   </widget>
+   <addaction name="menuConnect"/>
+   <addaction name="menuPlay"/>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreate_a_connection">
+   <property name="text">
+    <string>Create a connection</string>
+   </property>
+  </action>
+  <action name="actionConnect_to_server">
+   <property name="text">
+    <string>Connect to server</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </action>
+  <action name="actionSurrender">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Surrender</string>
+   </property>
+  </action>
+  <action name="actionMove">
+   <property name="text">
+    <string>Move</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
+ <slots>
+  <signal>startGame()</signal>
+ </slots>
 </ui>
