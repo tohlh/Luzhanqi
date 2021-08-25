@@ -25,9 +25,11 @@ public:
 public slots:
     void acceptConnection();
     void receiveData();
+    void disconnected();
 
 signals:
     void enablePlay();
+    void stopGame();
 
 private slots:
     void on_doneButton_clicked();

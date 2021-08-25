@@ -46,6 +46,7 @@ void Server::acceptConnection()
     ui->doneButton->setEnabled(true);
     readWriteSocket = listenSocket->nextPendingConnection();
     QObject::connect(readWriteSocket, SIGNAL(readyRead()), this, SLOT(receiveData()));
+    QObject::connect(readWriteSocket, SIGNAL(disconnected()), this, SLOT(disconnected()));
 }
 
 void Server::receiveData()
@@ -54,6 +55,13 @@ void Server::receiveData()
     QDataStream ds(&block, QIODevice::ReadOnly);
     ds >> currentData;
     command->parse(currentData);
+}
+
+void Server::disconnected()
+{
+    ui->notificationLabel->setText("The client has disconnected!");
+    this->show();
+    emit stopGame();
 }
 
 void Server::sendData(QString data)
