@@ -12,9 +12,6 @@ bool Validator::checkLose(QList <ChessPiece*> chesspieces)
         if (!chesspieces[i]->getChessFlipped()) {
             return false;
         }
-        if (chesspieces[i]->getChessType() != dilei && chesspieces[i]->getChessType() != junqi) {
-            return false;
-        }
     }
 
     for (int i = 0; i < chesspieces.size(); i++) {
@@ -35,6 +32,12 @@ bool Validator::checkLose(QList <ChessPiece*> chesspieces)
                     }
                 }
             }
+        }
+    }
+
+    for (int i = 0; i < chesspieces.size(); i++) {
+        if (chesspieces[i]->getChessType() != dilei && chesspieces[i]->getChessType() != junqi) {
+            return false;
         }
     }
 
@@ -104,14 +107,6 @@ int Validator::checkAttack(ChessPiece* chess1, ChessPiece* chess2) // 0 chess1 d
         return -2;
     }
 
-    if (chess1->getChessType() == zhadan) {
-        return -1;
-    }
-
-    if (chess1->getChessType() == gongbing && chess2->getChessType() == dilei) {
-        return 1;
-    }
-
     if (chess2->getChessType() == junqi) {
         for (int i = 0; i < grids.size(); i++) {
             for (int j = 0; j < grids[i].size(); j++) {
@@ -126,6 +121,10 @@ int Validator::checkAttack(ChessPiece* chess1, ChessPiece* chess2) // 0 chess1 d
         return 2;
     }
 
+    if (chess1->getChessType() == gongbing && chess2->getChessType() == dilei) {
+        return 1;
+    }
+
     if (chess1->getChessType() >= gongbing && chess1->getChessType() <= siling &&
         chess2->getChessType() >= gongbing && chess2->getChessType() <= siling) {
         if (chess1->getChessType() > chess2->getChessType()) {
@@ -133,6 +132,10 @@ int Validator::checkAttack(ChessPiece* chess1, ChessPiece* chess2) // 0 chess1 d
         } else if (chess1->getChessType() == chess2->getChessType()) {
             return -1;
         }
+    }
+
+    if (chess1->getChessType() == zhadan) {
+        return -1;
     }
 
     return -2;
