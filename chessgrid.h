@@ -36,7 +36,6 @@ public:
 
 private slots:
     void appendAction(int type, int id, int xCoord, int yCoord);
-    void appendActionNetwork(int from, int id, int xCoord, int yCoord);
     void receivedSeq(QList<int> seq);
 
 signals:
