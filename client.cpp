@@ -29,6 +29,7 @@ void Client::on_connectButton_clicked()
     if (connectToServer()) {
         ui->notifcationLabel->setText("Connected to host!");
         QObject::connect(readWriteSocket, SIGNAL(readyRead()), this, SLOT(receiveData()));
+        QObject::connect(readWriteSocket, SIGNAL(disconnected()), this, SLOT(disconnected()));
         ui->doneButton->setEnabled(true);
     } else {
         ui->notifcationLabel->setText("Unable to connect to host");
@@ -46,6 +47,13 @@ void Client::receiveData()
     } else {
         receiveSeq(currentData);
     }
+}
+
+void Client::disconnected()
+{
+    ui->notifcationLabel->setText("The host has disconnected.");
+    this->show();
+    emit stopGame();
 }
 
 void Client::receiveSeq(QString data)

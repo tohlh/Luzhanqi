@@ -18,12 +18,16 @@ MainWindow::~MainWindow()
 }
 
 // Public slots
-void MainWindow::enablePlay() {
-    ui->actionStart->setEnabled(true);
-}
-
 void MainWindow::initGame()
 {
+    player::steps = 0;
+    player::myColor = -1;
+    player::myLastColor = -1;
+    player::theirColor = -1;
+    player::theirLastColor = -1;
+    timer::currTimer = 20;
+    timer::overTimeCnt = 0;
+
     ui->actionStart->setEnabled(false);
     chessboard->setNewChessboard();
 
@@ -67,6 +71,12 @@ void MainWindow::endGame(int winColor)
     timer::currTimer = 20;
     timer::timer->stop();
     ui->timer->display(0);
+}
+
+void MainWindow::stopGame()
+{
+    timer::timer->stop();
+    player::isTurn = false;
 }
 
 void MainWindow::updateTimerText()
@@ -128,6 +138,10 @@ void MainWindow::theirTurn()
     }
 }
 
+void MainWindow::enablePlay() {
+    ui->actionStart->setEnabled(true);
+}
+
 // Private slots
 void MainWindow::on_actionStart_triggered()
 {
@@ -158,6 +172,7 @@ void MainWindow::on_actionCreate_a_connection_triggered()
         network::server = new Server();
         network::server->initServer();
         QObject::connect(network::server, SIGNAL(enablePlay()), this, SLOT(enablePlay()));
+        QObject::connect(network::server, SIGNAL(stopGame()), this, SLOT(stopGame()));
     }
     network::server->show();
 }
@@ -174,6 +189,7 @@ void MainWindow::on_actionConnect_to_server_triggered()
     if (!network::client) {
         network::client = new Client();
         QObject::connect(network::client, SIGNAL(startGame()), this, SLOT(initGame()));
+        QObject::connect(network::client, SIGNAL(stopGame()), this, SLOT(stopGame()));
     }
     network::client->show();
 }

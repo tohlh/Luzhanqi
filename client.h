@@ -25,9 +25,11 @@ public:
 signals:
     void receivedSeq(QList <int> seq);
     void startGame();
+    void stopGame();
 
 public slots:
     void receiveData();
+    void disconnected();
 
 private slots:
     void on_connectButton_clicked();

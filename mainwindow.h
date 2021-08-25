@@ -30,13 +30,14 @@ signals:
     void gameEnded(int winColor);
 
 public slots:
-    void enablePlay();
     void initGame();
     void endGame(int winColor);
+    void stopGame();
     void updateTimerText();
     void colorDecided();
     void myTurn();
     void theirTurn();
+    void enablePlay();
 
 private slots:
     void on_actionStart_triggered();
