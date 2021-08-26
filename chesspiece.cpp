@@ -172,7 +172,8 @@ void ChessPiece::selectChess(bool yourself)
         selBorder = QPixmap(":/images/bg_light_chess_red.png");
     }
     QPainter paint(&currFace);
-    paint.drawPixmap(0, 0, 360, 185, selBorder);
+    //paint.drawPixmap(0, 0, 360, 185, selBorder);
+    paint.drawPixmap(0, 0, 100, 55, selBorder);
     this->setPixmap(currFace);
 }
 
