@@ -98,10 +98,10 @@ void MainWindow::updateTimerText()
 
         theirTurn();
         if (network::server) {
-            network::server->sendData("!act -2 -2 -2 -2 !pas");
+            network::server->sendData("!act -2 -2 -2 !pas");
         }
         if (network::client) {
-            network::client->sendData("!act -2 -2 -2 -2 !pas");
+            network::client->sendData("!act -2 -2 -2 !pas");
         }
     }
     ui->timer->display(timer::currTimer);
