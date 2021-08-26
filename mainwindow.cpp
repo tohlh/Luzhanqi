@@ -28,6 +28,8 @@ void MainWindow::initGame()
     timer::currTimer = 20;
     timer::overTimeCnt = 0;
 
+    ui->colorLabel->setText("");
+    ui->turnLabel->setText("");
     ui->actionStart->setEnabled(false);
     chessboard->setNewChessboard();
 
@@ -60,8 +62,6 @@ void MainWindow::endGame(int winColor)
     }
     dialog->show();
 
-    ui->colorLabel->setText("");
-    ui->turnLabel->setText("");
     ui->actionSurrender->setEnabled(false);
 
     if (network::server) {
@@ -162,6 +162,7 @@ void MainWindow::on_actionSurrender_triggered()
 
 void MainWindow::on_actionCreate_a_connection_triggered()
 {
+    ui->actionDisconnect->setEnabled(true);
     if (network::client) {
         network::client->close();
         delete network::client;
@@ -179,6 +180,7 @@ void MainWindow::on_actionCreate_a_connection_triggered()
 
 void MainWindow::on_actionConnect_to_server_triggered()
 {
+    ui->actionDisconnect->setEnabled(true);
     ui->actionStart->setEnabled(false);
     if (network::server) {
         network::server->close();
@@ -192,5 +194,25 @@ void MainWindow::on_actionConnect_to_server_triggered()
         QObject::connect(network::client, SIGNAL(stopGame()), this, SLOT(stopGame()));
     }
     network::client->show();
+}
+
+
+void MainWindow::on_actionDisconnect_triggered()
+{
+    ui->actionStart->setEnabled(false);
+    ui->actionSurrender->setEnabled(false);
+    ui->actionDisconnect->setEnabled(false);
+    ui->colorLabel->setText("You are disconnected");
+    stopGame();
+
+    if (network::server) {
+        delete network::server;
+        network::server = nullptr;
+    }
+
+    if (network::client) {
+        delete network::client;
+        network::client = nullptr;
+    }
 }
 

@@ -98,6 +98,8 @@
     </property>
     <addaction name="actionCreate_a_connection"/>
     <addaction name="actionConnect_to_server"/>
+    <addaction name="separator"/>
+    <addaction name="actionDisconnect"/>
    </widget>
    <widget class="QMenu" name="menuPlay">
     <property name="title">
@@ -112,7 +114,7 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionCreate_a_connection">
    <property name="text">
-    <string>Create a connection</string>
+    <string>Open to network</string>
    </property>
   </action>
   <action name="actionConnect_to_server">
@@ -136,9 +138,12 @@
     <string>Surrender</string>
    </property>
   </action>
-  <action name="actionMove">
+  <action name="actionDisconnect">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="text">
-    <string>Move</string>
+    <string>Disconnect</string>
    </property>
   </action>
  </widget>

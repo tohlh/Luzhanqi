@@ -44,6 +44,7 @@ private slots:
     void on_actionSurrender_triggered();
     void on_actionCreate_a_connection_triggered();
     void on_actionConnect_to_server_triggered();
+    void on_actionDisconnect_triggered();
 
 private:
     Ui::MainWindow *ui;
