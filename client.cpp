@@ -26,6 +26,13 @@ void Client::on_connectButton_clicked()
     serverIP = ui->userInputIP->text();
     serverPort = ui->userInputPort->text().toInt();
 
+    QRegularExpression ipFormat("^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\\.|$)){4}$");
+
+    if (!ipFormat.match(serverIP).hasMatch()) {
+        ui->notifcationLabel->setText("Invalid IP address");
+        return;
+    }
+
     if (connectToServer()) {
         ui->notifcationLabel->setText("Connected to host!");
         QObject::connect(readWriteSocket, SIGNAL(readyRead()), this, SLOT(receiveData()));

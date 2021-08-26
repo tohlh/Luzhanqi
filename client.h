@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QTcpSocket>
 #include <QDataStream>
+#include <QRegularExpression>
 #include "command.h"
 
 namespace Ui {
