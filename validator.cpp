@@ -35,12 +35,6 @@ bool Validator::checkLose(QList <ChessPiece*> chesspieces)
         }
     }
 
-    for (int i = 0; i < chesspieces.size(); i++) {
-        if (chesspieces[i]->getChessType() != dilei && chesspieces[i]->getChessType() != junqi) {
-            return false;
-        }
-    }
-
     return true;
 }
 
