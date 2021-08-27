@@ -26,13 +26,13 @@ public:
     Chessboard *chessboard = new Chessboard();
 
 signals:
-    void gameStarted();
     void gameEnded(int winColor);
 
 public slots:
     void initGame();
     void endGame(int winColor);
     void stopGame();
+    void theyReady();
     void updateTimerText();
     void colorDecided();
     void myTurn();

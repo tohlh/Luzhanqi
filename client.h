@@ -25,7 +25,8 @@ public:
 
 signals:
     void receivedSeq(QList <int> seq);
-    void startGame();
+    void theyReady();
+    void enablePlay();
     void stopGame();
 
 public slots:

@@ -7,7 +7,6 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->chessboardLayout->addWidget(chessboard);
-    QObject::connect(this, SIGNAL(gameStarted()), this, SLOT(initGame()));
     QObject::connect(this, SIGNAL(gameEnded(int)), this, SLOT(endGame(int)));
     QObject::connect(timer::timer, SIGNAL(timeout()), this, SLOT(updateTimerText()));
 }
@@ -20,6 +19,12 @@ MainWindow::~MainWindow()
 // Public slots
 void MainWindow::initGame()
 {
+    if (!player::ready || !player::theyReady) {
+        return;
+    }
+
+    player::ready = false;
+    player::theyReady = false;
     player::steps = 0;
     player::myColor = -1;
     player::myLastColor = -1;
@@ -33,21 +38,17 @@ void MainWindow::initGame()
     ui->actionStart->setEnabled(false);
     chessboard->setNewChessboard();
 
+    QObject::connect(chessboard->chessgrid, SIGNAL(theirTurn()), this, SLOT(theirTurn()));
+    QObject::connect(this->chessboard->chessgrid, SIGNAL(colorDecided()), this, SLOT(colorDecided()));
+    QObject::connect(chessboard->chessgrid, SIGNAL(endGame(int)), this, SLOT(endGame(int)));
+
     if (network::server) {
         myTurn();
-        QObject::connect(network::server->command, SIGNAL(myTurn()), this, SLOT(myTurn()));
-        QObject::connect(network::server->command, SIGNAL(endGame(int)), this, SLOT(endGame(int)));
     }
 
     if (network::client) {
         theirTurn();
-        QObject::connect(network::client->command, SIGNAL(myTurn()), this, SLOT(myTurn()));
-        QObject::connect(network::client->command, SIGNAL(endGame(int)), this, SLOT(endGame(int)));
     }
-
-    QObject::connect(chessboard->chessgrid, SIGNAL(theirTurn()), this, SLOT(theirTurn()));
-    QObject::connect(this->chessboard->chessgrid, SIGNAL(colorDecided()), this, SLOT(colorDecided()));
-    QObject::connect(chessboard->chessgrid, SIGNAL(endGame(int)), this, SLOT(endGame(int)));
 }
 
 void MainWindow::endGame(int winColor)
@@ -62,15 +63,12 @@ void MainWindow::endGame(int winColor)
     }
     dialog->show();
 
-    ui->actionSurrender->setEnabled(false);
-
-    if (network::server) {
-        ui->actionStart->setEnabled(true);
-    }
-
+    player::isTurn = false;
     timer::currTimer = 20;
     timer::timer->stop();
     ui->timer->display(0);
+    ui->actionSurrender->setEnabled(false);
+    ui->actionStart->setEnabled(true);
 }
 
 void MainWindow::stopGame()
@@ -142,15 +140,30 @@ void MainWindow::enablePlay() {
     ui->actionStart->setEnabled(true);
 }
 
+void MainWindow::theyReady()
+{
+    player::theyReady = true;
+    initGame();
+}
+
 // Private slots
 void MainWindow::on_actionStart_triggered()
 {
-    emit gameStarted();
+    ui->actionStart->setEnabled(false);
+    if (network::client) {
+        QString cmd = "!sta";
+        network::client->sendData(cmd);
+    }
+    if (!player::theyReady) {
+        ui->turnLabel->setText("Waiting for opponent...");
+    }
+    ui->colorLabel->setText("");
+    player::ready = true;
+    initGame();
 }
 
 void MainWindow::on_actionSurrender_triggered()
 {
-    emit gameEnded(player::theirColor);
     QString cmd = QString("!end %1").arg(player::theirColor);
     if (network::server) {
         network::server->sendData(cmd);
@@ -158,6 +171,7 @@ void MainWindow::on_actionSurrender_triggered()
     if (network::client) {
         network::client->sendData(cmd);
     }
+    endGame(player::theirColor);
 }
 
 void MainWindow::on_actionCreate_a_connection_triggered()
@@ -174,6 +188,9 @@ void MainWindow::on_actionCreate_a_connection_triggered()
         network::server->initServer();
         QObject::connect(network::server, SIGNAL(enablePlay()), this, SLOT(enablePlay()));
         QObject::connect(network::server, SIGNAL(stopGame()), this, SLOT(stopGame()));
+        QObject::connect(network::server, SIGNAL(theyReady()), this, SLOT(theyReady()));
+        QObject::connect(network::server->command, SIGNAL(myTurn()), this, SLOT(myTurn()));
+        QObject::connect(network::server->command, SIGNAL(endGame(int)), this, SLOT(endGame(int)));
     }
     network::server->show();
 }
@@ -181,7 +198,6 @@ void MainWindow::on_actionCreate_a_connection_triggered()
 void MainWindow::on_actionConnect_to_server_triggered()
 {
     ui->actionDisconnect->setEnabled(true);
-    ui->actionStart->setEnabled(false);
     if (network::server) {
         network::server->close();
         delete network::server;
@@ -190,8 +206,11 @@ void MainWindow::on_actionConnect_to_server_triggered()
 
     if (!network::client) {
         network::client = new Client();
-        QObject::connect(network::client, SIGNAL(startGame()), this, SLOT(initGame()));
+        QObject::connect(network::client, SIGNAL(enablePlay()), this, SLOT(enablePlay()));
         QObject::connect(network::client, SIGNAL(stopGame()), this, SLOT(stopGame()));
+        QObject::connect(network::client, SIGNAL(theyReady()), this, SLOT(theyReady()));
+        QObject::connect(network::client->command, SIGNAL(myTurn()), this, SLOT(myTurn()));
+        QObject::connect(network::client->command, SIGNAL(endGame(int)), this, SLOT(endGame(int)));
     }
     network::client->show();
 }

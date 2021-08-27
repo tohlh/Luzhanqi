@@ -54,7 +54,11 @@ void Server::receiveData()
     QByteArray block = readWriteSocket->readAll();
     QDataStream ds(&block, QIODevice::ReadOnly);
     ds >> currentData;
-    command->parse(currentData);
+    if (currentData.mid(0, 4) != "!sta") {
+        command->parse(currentData);
+    } else {
+        emit theyReady();
+    }
 }
 
 void Server::disconnected()

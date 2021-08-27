@@ -38,6 +38,7 @@ void Client::on_connectButton_clicked()
         QObject::connect(readWriteSocket, SIGNAL(readyRead()), this, SLOT(receiveData()));
         QObject::connect(readWriteSocket, SIGNAL(disconnected()), this, SLOT(disconnected()));
         ui->doneButton->setEnabled(true);
+        emit enablePlay();
     } else {
         ui->notifcationLabel->setText("Unable to connect to host");
         ui->doneButton->setEnabled(false);
@@ -70,7 +71,7 @@ void Client::receiveSeq(QString data)
 
     for (int i = 1; i < rawSeq.size(); i++) seq.append(rawSeq[i].toInt());
 
-    emit startGame();
+    emit theyReady();
     emit receivedSeq(seq);
 }
 

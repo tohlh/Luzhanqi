@@ -28,6 +28,7 @@ public slots:
     void disconnected();
 
 signals:
+    void theyReady();
     void enablePlay();
     void stopGame();
 
