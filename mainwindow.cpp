@@ -60,6 +60,8 @@ void MainWindow::endGame(int winColor)
         dialog->setWinColor("Blue");
     } else if (winColor == 1) {
         dialog->setWinColor("Red");
+    } else if (winColor == -1) {
+        dialog->noWinner();
     }
     dialog->show();
 

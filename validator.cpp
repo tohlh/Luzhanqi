@@ -90,6 +90,10 @@ int Validator::checkAttack(ChessPiece* chess1, ChessPiece* chess2) // 0 chess1 d
         return -2;
     }
 
+    if (!chess2->getChessFlipped()) {
+        return -2;
+    }
+
     int x2 = chess2->getXCoord();
     int y2 = chess2->getYCoord();
 
@@ -117,6 +121,8 @@ int Validator::checkAttack(ChessPiece* chess1, ChessPiece* chess2) // 0 chess1 d
 
     if (chess1->getChessType() == gongbing && chess2->getChessType() == dilei) {
         return 1;
+    } else if (chess1->getChessType() == zhadan && chess2->getChessType() == dilei) {
+        return -1;
     }
 
     if (chess1->getChessType() >= gongbing && chess1->getChessType() <= siling &&
@@ -128,7 +134,7 @@ int Validator::checkAttack(ChessPiece* chess1, ChessPiece* chess2) // 0 chess1 d
         }
     }
 
-    if (chess1->getChessType() == zhadan) {
+    if (chess1->getChessType() == zhadan || chess2->getChessType() == zhadan) {
         return -1;
     }
 
