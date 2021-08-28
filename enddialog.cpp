@@ -18,3 +18,8 @@ void EndDialog::setWinColor(QString color)
     QString text = QString("%1 wins!").arg(color);
     ui->winTeam->setText(text);
 }
+
+void EndDialog::noWinner()
+{
+    ui->winTeam->setText("Colors are not decided. No winner!");
+}

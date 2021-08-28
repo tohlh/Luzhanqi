@@ -92,14 +92,14 @@ ChessGrid::ChessGrid(QWidget *parent) :
     }
 
     if (network::server) {
-        QObject::connect(network::server->command, SIGNAL(sendActionNetwork(int, int, int, int)), this, SLOT(appendActionNetwork(int, int, int, int)));
+        QObject::connect(network::server->command, SIGNAL(sendAction(int, int, int, int)), this, SLOT(appendAction(int, int, int, int)));
         shuffleChess();
         arrangeChess(chesspieces);
         network::server->sendChessSeq(chessSeq);
     }
 
     if (network::client) {
-        QObject::connect(network::client->command, SIGNAL(sendActionNetwork(int, int, int, int)), this, SLOT(appendActionNetwork(int, int, int, int)));
+        QObject::connect(network::client->command, SIGNAL(sendAction(int, int, int, int)), this, SLOT(appendAction(int, int, int, int)));
         QObject::connect(network::client, SIGNAL(receivedSeq(QList <int>)), this, SLOT(receivedSeq(QList <int>)));
     }
 
@@ -171,15 +171,7 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
     newAction.id = id;
     newAction.xCoord = xCoord;
     newAction.yCoord = yCoord;
-    QString cmd;
-
-    if (network::server) {
-        cmd = QString("!act 0 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
-    }
-
-    if (network::client) {
-        cmd = QString("!act 1 %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
-    }
+    QString cmd = QString("!act %1 %2 %3").arg(id).arg(xCoord).arg(yCoord);
 
     if (type == 0 && player::isTurn) {
         bool pas = false; // whether to end the command
@@ -315,15 +307,6 @@ void ChessGrid::appendAction(int type, int id, int xCoord, int yCoord) //type 0:
             }
         }
         checkLose();
-    }
-}
-
-void ChessGrid::appendActionNetwork(int from, int id, int xCoord, int yCoord) // from 0:host, 1:client
-{
-    if (from == 0 && network::client) {
-        appendAction(1, id, xCoord, yCoord);
-    } else if (from == 1 && network::server) {
-        appendAction(1, id, xCoord, yCoord);
     }
 }
 

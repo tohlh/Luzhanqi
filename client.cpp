@@ -26,11 +26,19 @@ void Client::on_connectButton_clicked()
     serverIP = ui->userInputIP->text();
     serverPort = ui->userInputPort->text().toInt();
 
+    QRegularExpression ipFormat("^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$");
+
+    if (!ipFormat.match(serverIP).hasMatch() && serverIP != "localhost") {
+        ui->notifcationLabel->setText("Invalid IP address");
+        return;
+    }
+
     if (connectToServer()) {
         ui->notifcationLabel->setText("Connected to host!");
         QObject::connect(readWriteSocket, SIGNAL(readyRead()), this, SLOT(receiveData()));
         QObject::connect(readWriteSocket, SIGNAL(disconnected()), this, SLOT(disconnected()));
         ui->doneButton->setEnabled(true);
+        emit enablePlay();
     } else {
         ui->notifcationLabel->setText("Unable to connect to host");
         ui->doneButton->setEnabled(false);
@@ -63,7 +71,7 @@ void Client::receiveSeq(QString data)
 
     for (int i = 1; i < rawSeq.size(); i++) seq.append(rawSeq[i].toInt());
 
-    emit startGame();
+    emit theyReady();
     emit receivedSeq(seq);
 }
 

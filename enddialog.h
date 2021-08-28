@@ -15,6 +15,7 @@ public:
     explicit EndDialog(QWidget *parent = nullptr);
     ~EndDialog();
     void setWinColor(QString color);
+    void noWinner();
 
 private:
     Ui::EndDialog *ui;

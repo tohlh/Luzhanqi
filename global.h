@@ -16,6 +16,8 @@ namespace timer {
 };
 
 namespace player {
+    extern bool ready;
+    extern bool theyReady;
     extern bool isTurn;
     extern int steps;
     extern int myColor;

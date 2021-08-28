@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QTcpSocket>
 #include <QDataStream>
+#include <QRegularExpression>
 #include "command.h"
 
 namespace Ui {
@@ -24,7 +25,8 @@ public:
 
 signals:
     void receivedSeq(QList <int> seq);
-    void startGame();
+    void theyReady();
+    void enablePlay();
     void stopGame();
 
 public slots:

@@ -12,6 +12,8 @@ namespace timer {
 };
 
 namespace player {
+    bool ready = false;
+    bool theyReady = false;
     bool isTurn = false;
     int steps = 0;
     int myColor = -1;
